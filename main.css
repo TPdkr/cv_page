@@ -22,6 +22,7 @@ body{
     background-color: var(--surface);
 }
 
+/**navigation bar*/
 div.navbar {
     position: sticky;
     top:5px;
@@ -38,6 +39,15 @@ div.navbar {
 
 }
 
+div.navbar a.text-button{
+    color: var(--onTertiaryContainer);
+}
+
+div.title a.text-button{
+    color: var(--onSurface);
+}
+
+/**CARD*/
 div.card{
     /**box setting*/
     margin: 10px auto;
@@ -58,13 +68,17 @@ div.card{
 }
 
 div.card h1{
-    font-family: 70px;;
+    font-family: 70px;
+    margin: 0 auto;
     font-weight: bold;
+    max-width: 600px;
 }
 
 div.card h2{
     margin-top:10px;
+    margin: 0 auto;
     font-weight: bold;
+    max-width: 600px;
 }
 
 div.card p{
@@ -124,6 +138,12 @@ div.row {
 .title img{
     border-radius: 50%;
     width: 150px;
+}
+
+.title p{
+    margin: 10px;
+    font-size: 25px;
+    max-width: 800px;
 }
 /**
 BUTTONS
@@ -230,14 +250,6 @@ div.card#edu img{
     justify-content: space-between;
 }
 
-div.navbar a.text-button{
-    color: var(--onTertiaryContainer);
-}
-
-div.title a.text-button{
-    color: var(--onSurface);
-}
-
 .app_pics{
     width:170px;
 }
@@ -263,4 +275,9 @@ div.title a.text-button{
 
 #mid_header{
     font-size: 30px;
+}
+
+div.card img#android{
+    margin: 0 auto;
+    width: 100px;
 }
