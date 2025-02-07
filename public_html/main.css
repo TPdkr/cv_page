@@ -1,0 +1,265 @@
+:root{
+    --source: #441E35;
+    --surface: #fff8f8;
+    --onSurface: #211a1d;
+    --surfaceDim: #e5d6db;
+    --primaryContainer: #ffd8ea;
+    --onPrimaryContainer:#6b3455;
+    --primary: #874b6e;
+    --onPrimary: #ffffff;
+    --tertiaryContainer: #ffdbca;
+    --onTertiaryContainer: #653d27;
+}
+
+*{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--onSurface);
+    background-color: var(--surface);
+}
+
+div.navbar {
+    position: sticky;
+    top:5px;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 20px;
+    /**colors*/
+    color: var(--onTertiaryContainer);
+    background-color: var(--tertiaryContainer);
+    /**flex box settings*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+div.card{
+    /**box setting*/
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    min-width: 100px;
+    max-width: 1000px;
+    /**flex box settings*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /**color and shape*/
+    border-radius: 30px;
+    background-color: var(--surfaceDim);
+    color: var(--onSurface);
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+div.card h1{
+    font-family: 70px;;
+    font-weight: bold;
+}
+
+div.card h2{
+    margin-top:10px;
+    font-weight: bold;
+}
+
+div.card p{
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 600px;
+}
+
+div.card img{
+    margin: 10px;
+    border-radius: 20px;
+}
+
+div.card ul {
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block; 
+}
+
+/**in card island*/
+div.card div.island{
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--surface);
+    color: var(--onSurface);
+    border-radius: 20px;
+}
+
+/**row box that contains body text*/
+div.row {
+    /**flex box settings*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/**title cotntains the main info about the page*/
+.title {
+    padding: 20px;
+    text-align: center;
+    /**flex box settings*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 70px;
+}
+
+.title h2{
+    width: 400px;
+    line-height: 30px;
+}
+
+.title img{
+    border-radius: 50%;
+    width: 150px;
+}
+/**
+BUTTONS
+This section contains 3 main button types used on this website
+*/
+
+/**
+* this is an outlined button class and its states
+* best used for options that should not distract the user
+*/
+.outlined-button {
+    padding: 10px;
+    /**border related properties*/
+    border-radius: 30px;
+    border-color: var(--primary);
+    border-width: 2px;
+    border-style: solid;
+    /**font and background*/
+    background-color: var(--onPrimary);
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--primary);
+    /**transition property*/
+    text-decoration: none;
+    transition: background-color 0.5s, 
+    color 0.5s, 
+    border-color 0.5s;
+}
+
+.outlined-button:hover{
+    border-color: var(--primaryContainer);
+    background-color: var(--primaryContainer);
+    color: var(--onPrimaryContainer);
+}
+
+.outlined-button:active{
+    opacity: 0.7;
+}
+
+/**
+* this is a filled button class best used for important 
+* and attention grabbing buttons
+*/
+.filled-button {
+    padding: 10px;
+    /**border related properties*/
+    border-radius: 30px;
+    border-color: var(--primary);
+    border-width: 2px;
+    border-style: solid;
+    /*background color*/
+    background-color: var(--primary);
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--onPrimary);
+    transition: opacity 0.5s, box-shadow 0.15s;
+}
+
+.filled-button:hover{
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.filled-button:active{
+    opacity: 0.5;
+}
+
+/**this is a text button like the ones in the navbar*/
+.text-button {
+    cursor: pointer;
+    text-decoration: none;
+    transition: box-shadow 0.3s, opacity 0.3s;
+    
+}
+
+.text-button:hover{
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.text-button:active{
+    opacity: 0.5;
+}
+
+
+/**CUSTOMIZATION*/
+/**tertiary container card*/
+div.card.primaryCard{
+    background-color: var(--primaryContainer);
+    color: var(--onPrimaryContainer);
+}
+/**image properties in card*/
+div.card#edu img{
+    margin: 10px auto;
+    max-width: 600px;
+    min-width: 200px;
+}
+/**the button to reach out has to be bigger*/
+#reachOut{
+    width: 200px;
+}
+
+#buttonPanel .row{
+    justify-content: space-between;
+}
+
+div.navbar a.text-button{
+    color: var(--onTertiaryContainer);
+}
+
+div.title a.text-button{
+    color: var(--onSurface);
+}
+
+.app_pics{
+    width:170px;
+}
+
+#toGitHub{
+    margin: 10px auto;
+    width: 200px;
+    justify-self: center;
+}
+
+.row#AppFeatures{
+    justify-content: center;
+}
+
+.row#AppFeatures img{
+    height: 130px;
+    width: 130px;
+    margin: 10px 40px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    
+}
+
+#mid_header{
+    font-size: 30px;
+}
