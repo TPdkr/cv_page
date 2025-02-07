@@ -180,6 +180,7 @@ This section contains 3 main button types used on this website
     font-weight: bold;
     color: var(--onPrimary);
     transition: opacity 0.5s, box-shadow 0.15s;
+    text-decoration: none;
 }
 
 .filled-button:hover{
