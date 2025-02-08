@@ -242,6 +242,11 @@ div.card#edu img{
     max-width: 600px;
     min-width: 200px;
 }
+
+#edu div.row div.island{
+    padding-bottom: 30px;
+    width: 42%;
+}
 /**the button to reach out has to be bigger*/
 #reachOut{
     width: 200px;
