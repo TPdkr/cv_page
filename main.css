@@ -10,6 +10,8 @@
     --tertiaryContainer: #ffdbca;
     --onTertiaryContainer: #653d27;
     */
+
+    /**website colors*/
     --source: #742CFF;
     --surface: #141218;
     --onSurface: #e6e0e9;
@@ -20,12 +22,22 @@
     --onPrimary: #36275d;
     --tertiaryContainer: #633b48;
     --onTertiaryContainer: #ffd9e3;
+    --invSurvace:#2c2a31;
+
+    /*website padding values**/
+    --small-pad: 10px;
+    --medium-pad: 20px;
+    --large-pad: 30px;
 }
 
 *{
     font-family: Arial;
     margin: 0;
     padding: 0;
+}
+
+ul{
+    list-style-position: inside;
 }
 
 body{
@@ -37,7 +49,7 @@ body{
 div.navbar {
     position: sticky;
     top:5px;
-    margin: 10px;
+    margin: var(--small-pad);
     padding: 7px;
     border-radius: 20px;
     /**colors*/
@@ -61,8 +73,8 @@ div.title a.text-button{
 /**CARD*/
 div.card{
     /**box setting*/
-    margin: 10px auto;
-    padding: 10px;
+    margin: var(--small-pad) auto;
+    padding: var(--medium-pad);
     width: 90%;
     min-width: 100px;
     max-width: 1000px;
@@ -99,7 +111,7 @@ div.card p{
 }
 
 div.card img{
-    margin: 10px;
+    margin: var(--small-pad) 0;
     max-width: 600px;
     border-radius: 20px;
 }
@@ -112,9 +124,8 @@ div.card ul {
 
 /**in card island*/
 div.card div.island{
-    padding: 20px;
-    margin: 10px;
-    background-color: var(--surface);
+    padding: var(--medium-pad);
+    background-color: var(--invSurvace);
     color: var(--onSurface);
     border-radius: 20px;
 }
@@ -124,7 +135,7 @@ div.row {
     /**flex box settings*/
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -248,8 +259,14 @@ div.card.primaryCard{
 }
 /**image properties in card*/
 div.card#edu img{
-    margin: 10px auto;
-    max-width: 600px;
+    margin: 20px 0;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+div.card#edu div.row p{
+    margin: 0 auto;
+    max-width: 300px;
     min-width: 200px;
 }
 
@@ -263,8 +280,8 @@ div.card#edu img{
 }
 
 #buttonPanel .row{
-    justify-content: space-between;
     margin: 0 auto;
+    width: 90%;
     max-width: 990px;
 }
 
@@ -279,14 +296,13 @@ div.card#edu img{
 }
 
 .row#AppFeatures{
-    margin: 0 50px;
+    padding: var(--medium-pad) 0;
     justify-content: space-between;
 }
 
 .row#AppFeatures img{
     height: 130px;
     width: 130px;
-    margin: 10px 40px;
     border-radius: 50%;
      
 }
@@ -313,7 +329,7 @@ div.card img#android{
 }
 
 div.card div.island.about{
-    max-width: 27%;
+    max-width: 28%;
 }
 
 div.card div.island.about img{
