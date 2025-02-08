@@ -10,7 +10,7 @@
     --tertiaryContainer: #ffdbca;
     --onTertiaryContainer: #653d27;
     */
-    --source: #441E35;
+    --source: #742CFF;
     --surface: #141218;
     --onSurface: #e6e0e9;
     --surfaceDim: #3b383e;
@@ -75,7 +75,7 @@ div.card{
     background-color: var(--surfaceDim);
     color: var(--onSurface);
     text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
 }
 
 div.card h1{
@@ -217,7 +217,7 @@ This section contains 3 main button types used on this website
 
 .filled-button:hover{
     opacity: 0.7;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
 }
 
 .filled-button:active{
@@ -228,12 +228,11 @@ This section contains 3 main button types used on this website
 .text-button {
     cursor: pointer;
     text-decoration: none;
-    transition: box-shadow 0.3s, opacity 0.3s;
-    
+    transition: opacity 0.5s, text-shadow 0.5s;
 }
 
 .text-button:hover{
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .text-button:active{
@@ -293,7 +292,7 @@ div.card#edu img{
 }
 
 .row#AppFeatures img#appIcon{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);   
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);   
 }
 
 #mid_header{
