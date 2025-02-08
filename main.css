@@ -290,3 +290,11 @@ div.card img#android{
 .website_pic{
     height: 400px;
 }
+
+div.card div.island.about{
+    max-width: 200px;
+}
+
+div.card div.island.about img{
+    width: 90px;
+}
