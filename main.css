@@ -1,5 +1,5 @@
 :root{
-    --source: #441E35;
+    /**--source: #441E35;
     --surface: #fff8f8;
     --onSurface: #211a1d;
     --surfaceDim: #e5d6db;
@@ -9,6 +9,17 @@
     --onPrimary: #ffffff;
     --tertiaryContainer: #ffdbca;
     --onTertiaryContainer: #653d27;
+    */
+    --source: #441E35;
+    --surface: #141218;
+    --onSurface: #e6e0e9;
+    --surfaceDim: #3b383e;
+    --primaryContainer: #4d3d75;
+    --onPrimaryContainer:#e9ddff;
+    --primary: #cfbdfe;
+    --onPrimary: #36275d;
+    --tertiaryContainer: #633b48;
+    --onTertiaryContainer: #ffd9e3;
 }
 
 *{
