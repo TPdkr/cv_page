@@ -128,7 +128,7 @@ div.row {
 }
 
 .title h1{
-    font-size: 70px;
+    font-size: 30px;
 }
 
 .title h2{
@@ -287,6 +287,10 @@ div.card#edu img{
 
 #mid_header{
     font-size: 30px;
+}
+
+#main_title h1{
+    font-size: 70px;
 }
 
 div.card img#android{
