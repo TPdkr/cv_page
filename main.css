@@ -254,6 +254,8 @@ div.card#edu img{
 
 #buttonPanel .row{
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 990px;
 }
 
 .app_pics{
