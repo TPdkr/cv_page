@@ -1,4 +1,5 @@
 ## CV WEBSITE
+https://tpdkr.github.io/cv_page/
 ## Completed by TPdkr
 This is a simple webiste where I describe in length my education, experience and projects. You can also access my cv.pdf
 and transcript. This gives me an ability to have more visuals for things that cannot be described in text easily like
