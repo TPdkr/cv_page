@@ -147,7 +147,6 @@ div.card p{
 }
 
 div.card img{
-    margin: var(--small-pad) 0;
     max-width: 600px;
     border-radius: 20px;
 }

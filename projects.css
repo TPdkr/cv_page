@@ -1,7 +1,4 @@
 /**PROJECT PAGE*/
-.app_pics{
-    width:170px;
-}
 
 #toGitHub{
     margin: 10px auto;
@@ -9,17 +6,93 @@
     justify-self: center;
 }
 
-.row#AppFeatures{
-    padding: var(--medium-pad) 0;
-    justify-content: space-between;
+.genauDesc{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    column-gap: var(--medium-pad);
+    text-align: left;
 }
 
+.genauDesc img{
+    width: 100%;
+}
+
+/**TEXT ISLAND*/
+.genauDesc div.island{
+    margin-top: var(--small-pad);
+    margin-bottom: var(--small-pad);
+}
+
+/*BUTTON ROW*/
+.buttonRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--medium-pad);
+}
+
+/**FIRST ROW/
+/*row properties*/
+div.genauRow1{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: var(--small-pad);
+    height: 100%;
+    max-height: 100px;
+}
+
+div.genauRow1 > div{
+    min-height: 0;
+}
+
+/**android icon*/
+div div.androidIcon.island{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--onPrimaryContainer);
+
+}
+
+/*app name*/
+div div.name.island{
+    background-color: var(--primaryContainer);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+div div.name.island h1{
+    margin: 0;
+}
+
+/*crop of app picture*/
+div div.crop.island{
+    padding: 0;
+}
+
+div div.crop.island img{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+}
+/*FEATURES:*/
+div.genauDesc div.row{
+    margin-top: 5px;
+    justify-content: flex-start;
+}
+
+/**/
 .row#AppFeatures img{
     height: 130px;
     width: 130px;
     border-radius: 50%;
      
 }
+
 
 .row#AppFeatures img#appIcon{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);   
