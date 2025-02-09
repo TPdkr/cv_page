@@ -190,14 +190,12 @@ div.row {
 }
 
 .title h2{
-    width: 400px;
     line-height: 30px;
 }
 
 .title p{
     margin: 10px;
     font-size: 25px;
-    max-width: 800px;
 }
 /**
 BUTTONS
@@ -280,26 +278,27 @@ This section contains 3 main button types used on this website
 .text-button:active{
     opacity: 0.5;
 }
+
+/**CUSTOMIZATION*/
 /*page main title*/
 #main_title h1{
     font-size: 70px;
 }
 
-/**CUSTOMIZATION*/
-.profile_title{
-    align-self: fl;
+div#main_title.profile_title{
+    margin: 0 auto;
     width: 90%;
-    max-width: 1000px;
-    margin:0 auto;
+    max-width: 990px;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 2fr 6fr;
+    column-gap: var(--medium-pad);
     text-align: left;
-    width: 100%;
 }
 
 .profile_title img{
     border-radius: 50%;
-    width: 150px;
+    min-width: 100px;
+    width: 100%;
 }
 
 /**Button panel contents*/
