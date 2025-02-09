@@ -193,11 +193,6 @@ div.row {
     line-height: 30px;
 }
 
-.title img{
-    border-radius: 50%;
-    width: 150px;
-}
-
 .title p{
     margin: 10px;
     font-size: 25px;
@@ -284,17 +279,28 @@ This section contains 3 main button types used on this website
 .text-button:active{
     opacity: 0.5;
 }
-
+/*page main title*/
 #main_title h1{
     font-size: 70px;
 }
 
 /**CUSTOMIZATION*/
-/**tertiary container card*/
-div.card.primaryCard{
-    background-color: var(--primaryContainer);
-    color: var(--onPrimaryContainer);
+.profile_title{
+    align-self: fl;
+    width: 90%;
+    max-width: 1000px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    text-align: left;
+    width: 100%;
 }
+
+.profile_title img{
+    border-radius: 50%;
+    width: 150px;
+}
+
 /**Button panel contents*/
 #buttonPanel .row{
     margin: 0 auto;
@@ -306,12 +312,14 @@ div.card.primaryCard{
     width: 200px;
 }
 
+/**languages grid*/
 .languages{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--small-pad);
     row-gap: var(--small-pad);
     grid-template-rows: 1fr 1fr;
+    text-align: center;
 }
 
 .languages div.island{
@@ -321,10 +329,7 @@ div.card.primaryCard{
     align-items: center;
 }
 
-div.skills{
-    justify-content: flex-start;
-}
-
+/*the about me section next to languages*/
 .aboutHeader{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -334,11 +339,18 @@ div.skills{
 div.island.about{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:left;
+    text-align: left;
 }
 
+/*list of languages and coding environments etc.*/
+div.skills{
+    justify-content: flex-start;
+}
+
+/**UNIVERSITY DESCRIPTION*/
 div.uniDesc{
-    margin: 20px 0;
+    margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -346,15 +358,58 @@ div.uniDesc{
     text-align: left;
 }
 
-div.uniDesc img{
+/*the picture and text over it*/
+div#uniPic{
+    /**position: relative;
+    display: inline-block;
+    margin: 0;*/
+    position: relative;
+    display: flex;
+    align-items: flex-start;
     width: 100%;
+    overflow: hidden;
+}
+
+div.uniDesc div img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     margin: 0;
 }
 
-div.uniDesc div h2{
-    font-size: 40px;
+div.uniDesc div div.uniImgTitle{
+    display: flex;
+    flex-direction: column;
+    /**position*/
+    position: absolute;
+    inset: 0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    /**text*/
+    background: rgba(0, 0, 0, 0.6); 
+    color: var(--onSurface);
+    text-align: left;
+    /*border radius*/
+    border-radius: 20px;
 }
 
+div.uniDesc div div.uniImgTitle h1{
+   font-size: 80px;
+}
+
+
+div.uniDesc div div.uniImgTitle h3{
+    font-size: 20px;
+    margin-bottom: var(--medium-pad);
+    margin-left: var(--medium-pad);
+    margin-top: auto;
+}
+
+/*text next to the picture*/
 div.uniDesc div h2{
     font-size: 40px;
 }
@@ -362,6 +417,11 @@ div.uniDesc div h2{
 div.uniDesc div p{
     font-size: 18px;
     font-weight: bold;
+}
+
+/**COURSE CARD*/
+div#courseWork{
+    margin-top: var(--medium-pad);
 }
 
 .courseCards{
@@ -372,11 +432,7 @@ div.uniDesc div p{
 
 }
 
-/**COURSE CARD*/
-#courseWork div.row{
-    justify-items: flex-start;
-}
-
+/**actual course card settings*/
 div.courseCard{
     display: flex;
     flex-direction: column;
@@ -416,16 +472,21 @@ div.courseCard div.blob{
     align-self: flex-end;
 }
 
-/**WORK CARD*/
+div.courseCard h2{
+    font-size: 20px;
+}
+
+/**WORK CARD SECTION*/
 #workExperience div.row{
     margin-top: var(--small-pad);
     justify-content: flex-start;
 }
-
+/*make sure there is padding between spectrum and other cards*/
 #spectrum{
     margin: 0 var(--medium-pad)
 }
 
+/*the actual work card setting*/
 div.workCard{
     display: flex;
     flex-direction: column;
@@ -469,10 +530,6 @@ div.workCard div.blob{
     background-color: var(--surfaceDim);
     color: var(--onSurface);
     align-self: flex-end;
-}
-
-div.courseCard h2{
-    font-size: 20px;
 }
 /**PTOJECT PAGE*/
 .app_pics{
