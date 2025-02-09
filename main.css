@@ -359,10 +359,7 @@ div.uniDesc{
 }
 
 /*the picture and text over it*/
-div#uniPic{
-    /**position: relative;
-    display: inline-block;
-    margin: 0;*/
+div.TitlePic{
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -370,7 +367,7 @@ div#uniPic{
     overflow: hidden;
 }
 
-div.uniDesc div img{
+div.TitlePic img{
     display: block;
     max-width: 100%;
     width: 100%;
@@ -379,7 +376,7 @@ div.uniDesc div img{
     margin: 0;
 }
 
-div.uniDesc div div.uniImgTitle{
+div.ImgTitle{
     display: flex;
     flex-direction: column;
     /**position*/
@@ -397,15 +394,17 @@ div.uniDesc div div.uniImgTitle{
     border-radius: 20px;
 }
 
-div.uniDesc div div.uniImgTitle h1{
+div.ImgTitle h1{
+    margin-left: var(--medium-pad);
+    margin-right: var(--medium-pad);
    font-size: 80px;
 }
 
-
-div.uniDesc div div.uniImgTitle h3{
+div.ImgTitle h3{
     font-size: 20px;
     margin-bottom: var(--medium-pad);
     margin-left: var(--medium-pad);
+    margin-right: var(--medium-pad);
     margin-top: auto;
 }
 
@@ -531,7 +530,39 @@ div.workCard div.blob{
     color: var(--onSurface);
     align-self: flex-end;
 }
-/**PTOJECT PAGE*/
+
+div.schoolDesc{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+div.schoolDesc div img{
+    max-height: 500px;
+}
+
+div.schoolDesc div.desc{
+    padding-right: var(--small-pad);
+}
+
+div.schoolDesc div h2{
+    font-size: 25px;
+}
+
+div.schoolDesc div p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.schoolDesc div.ImgTitle h1{
+    font-size: 60px;
+}
+
+div.schoolDesc div div.row{
+    justify-content: flex-start;
+}
+
+/**PROJECT PAGE*/
 .app_pics{
     width:170px;
 }
