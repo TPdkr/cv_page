@@ -52,6 +52,7 @@ div.navbar {
     margin: var(--small-pad);
     padding: 7px;
     border-radius: 20px;
+    z-index: 3;
     /**colors*/
     color: var(--onTertiaryContainer);
     background-color: var(--tertiaryContainer);
