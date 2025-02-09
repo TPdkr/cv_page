@@ -563,39 +563,3 @@ div.schoolDesc div div.row{
     justify-content: flex-start;
 }
 
-/**PROJECT PAGE*/
-.app_pics{
-    width:170px;
-}
-
-#toGitHub{
-    margin: 10px auto;
-    width: 200px;
-    justify-self: center;
-}
-
-.row#AppFeatures{
-    padding: var(--medium-pad) 0;
-    justify-content: space-between;
-}
-
-.row#AppFeatures img{
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-     
-}
-
-.row#AppFeatures img#appIcon{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);   
-}
-
-div.card img#android{
-    margin: 0 auto;
-    width: 100px;
-}
-
-.website_pic{
-    height: 400px;
-}
-
