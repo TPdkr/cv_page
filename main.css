@@ -306,6 +306,21 @@ div.card.primaryCard{
     width: 200px;
 }
 
+.languages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--small-pad);
+    row-gap: var(--small-pad);
+    grid-template-rows: 1fr 1fr;
+}
+
+.languages div.island{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 div.skills{
     justify-content: flex-start;
 }
@@ -316,8 +331,10 @@ div.skills{
     column-gap: var(--medium-pad);
 }
 
-div.card div.island.about img{
-    width: 90px;
+div.island.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 div.uniDesc{
