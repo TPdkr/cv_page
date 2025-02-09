@@ -70,6 +70,41 @@ div.title a.text-button{
     color: var(--onSurface);
 }
 
+/**BLOBS*/
+div.blob{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: var(--onSurface);
+    color: var(--surface);
+}
+
+div.blob-outlined{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    color: var(--onSurface);
+    border-color: var(--onSurface);
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+/**content box which isnt card*/
+div.contentBox{
+    /**box setting*/
+    margin: var(--small-pad) auto;
+    width: 90%;
+    min-width: 100px;
+    max-width: 1000px;
+}
+
 /**CARD*/
 div.card{
     /**box setting*/
@@ -260,23 +295,6 @@ div.card.primaryCard{
     background-color: var(--primaryContainer);
     color: var(--onPrimaryContainer);
 }
-/**card about univerity properties*/
-div.card#edu img{
-    margin: 20px 0;
-    max-width: 500px;
-    min-width: 200px;
-}
-
-div.card#edu div.row p{
-    margin: 0 auto;
-    max-width: 300px;
-    min-width: 200px;
-}
-
-#edu div.row div.island{
-    padding-bottom: 30px;
-    width: 42%;
-}
 /**Button panel contents*/
 #buttonPanel .row{
     margin: 0 auto;
@@ -288,13 +306,53 @@ div.card#edu div.row p{
     width: 200px;
 }
 
-/**about section*/
-div.card div.island.about{
-    max-width: 28%;
+div.skills{
+    justify-content: flex-start;
+}
+
+.aboutHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: var(--medium-pad);
 }
 
 div.card div.island.about img{
     width: 90px;
+}
+
+div.uniDesc{
+    margin: 20px 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: var(--medium-pad);
+    text-align: left;
+}
+
+div.uniDesc img{
+    width: 100%;
+    margin: 0;
+}
+
+div.uniDesc div h2{
+    font-size: 40px;
+}
+
+div.uniDesc div h2{
+    font-size: 40px;
+}
+
+div.uniDesc div p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.courseCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: var(--medium-pad);
+    grid-template-rows: 1fr 1fr;
+
 }
 
 /**COURSE CARD*/
@@ -317,10 +375,16 @@ div.courseCard{
     max-width: 200px;
     text-align: left;
 }
+
 div.courseCard div{
     display: flex;
     margin-top: auto;
     flex-direction: row;
+}
+
+div.courseCard h2{
+    text-align: left;
+    margin: 0;
 }
 
 div.courseCard div.blob{
@@ -337,7 +401,12 @@ div.courseCard div.blob{
 
 /**WORK CARD*/
 #workExperience div.row{
-    justify-content: space-between;
+    margin-top: var(--small-pad);
+    justify-content: flex-start;
+}
+
+#spectrum{
+    margin: 0 var(--medium-pad)
 }
 
 div.workCard{
@@ -350,13 +419,17 @@ div.workCard{
     border-width: 2px;
     border-style: solid;
     /*box properties*/
-    margin: var(--small-pad) 0;
     padding: var(--small-pad);
     max-width: 200px;
     text-align: left;
     /**color*/
     background-color: var(--onSurface);
     color: var(--surface);
+}
+
+div.workCard h2{
+    text-align: left;
+    margin: 0;
 }
 
 div.workCard ul{
