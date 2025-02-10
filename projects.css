@@ -85,6 +85,8 @@ div div.name.island div p{
 /*CLOSE UP CARD*/
 div div.crop.island{
     position: relative;
+    width: 100%;
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -98,20 +100,16 @@ div div.crop.island img{
 }
 
 div.cropTitle{
-    height: 100%;
-    width: 100%;
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.6); 
     border-radius: 20px;
+    padding: var(--medium-pad);
     display: flex;
     
 }
 
 div.cropTitle h1{
-    margin-left: var(--small-pad);
-    margin-right: var(--medium-pad);
-    margin-bottom: var(--small-pad);
     margin-top: auto;
 }
 
