@@ -1,46 +1,41 @@
 /**PROJECT PAGE*/
-
-#toGitHub{
-    margin: 10px auto;
-    width: 200px;
-    justify-self: center;
-}
-
 .genauDesc{
     display: grid;
     grid-template-columns: 2fr 5fr;
     column-gap: var(--medium-pad);
     text-align: left;
+    margin-bottom: var(--medium-pad);
 }
 
 .genauDesc img{
     width: 100%;
 }
 
-/**TEXT ISLAND*/
-.genauDesc div.island{
-    margin-top: var(--small-pad);
-    margin-bottom: var(--small-pad);
+/*text part*/
+div.genauDescText h1{
+    margin: 0;
 }
 
-/*BUTTON ROW*/
-.buttonRow{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: var(--medium-pad);
+div.genauDescText p{
+    padding: 0;
+    margin: 0;
 }
 
-/**FIRST ROW/
-/*row properties*/
+div.genauDescText div.development{
+    padding: var(--medium-pad);
+}
+/**FIRST ROW*/
 div.genauRow1{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     column-gap: var(--small-pad);
     height: 100%;
-    max-height: 100px;
+    max-height: 200px;
+    margin-bottom: var(--small-pad);
 }
 
 div.genauRow1 > div{
+    margin: 0;
     min-height: 0;
 }
 
@@ -50,26 +45,44 @@ div div.androidIcon.island{
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    background-color: var(--onPrimaryContainer);
+    background-color: var(--onPrimary);
+    text-align: left;
+}
 
+div div.androidIcon.island div{
+    margin-top: auto;
+}
+
+div div.androidIcon.island div p{
+    padding: 0;
 }
 
 /*app name*/
 div div.name.island{
     background-color: var(--primaryContainer);
+    text-align: left;
     display: flex;
-    text-align: center;
     flex-direction: column;
     align-content: center;
     justify-content: center;
 }
 
 div div.name.island h1{
+    font-size: 40px;
     margin: 0;
+}
+
+div div.name.island div{
+    margin-top: auto;
+}
+
+div div.name.island div p{
+    padding: 0;
 }
 
 /*crop of app picture*/
 div div.crop.island{
+    margin: 0;
     padding: 0;
 }
 
@@ -85,22 +98,51 @@ div.genauDesc div.row{
     justify-content: flex-start;
 }
 
-/**/
-.row#AppFeatures img{
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-     
+/*BUTTON ROW*/
+.buttonRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--medium-pad);
+    height: auto;
+    text-align: left;
+}
+/*github page button*/
+div#gitGenau.island{
+    height: 100px;
+    background-color: var(--primary);
+    color: var(--onPrimary);
+    transition: opacity 0.5s, box-shadow 0.15s;
 }
 
-
-.row#AppFeatures img#appIcon{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);   
+div#gitGenau.island:hover{
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
 }
 
-div.card img#android{
-    margin: 0 auto;
-    width: 100px;
+div#gitGenau.island:active{
+    opacity: 0.5;
+}
+/*download button*/
+div#downloadGenau.island{
+    height: 100px;
+    background-color: var(--onPrimary);
+    color: var(--primary);
+    border-color: var(--primary);
+    border-width: 2px;
+    border-style: solid;
+    transition: background-color 0.5s, 
+    color 0.5s, 
+    border-color 0.5s;
+}
+
+div#downloadGenau.island:hover{
+    border-color: var(--primaryContainer);
+    background-color: var(--primaryContainer);
+    color: var(--onPrimaryContainer);
+}
+
+div#downloadGenau.island:active{
+    opacity: 0.7;
 }
 
 .website_pic{

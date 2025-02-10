@@ -32,6 +32,7 @@
 
 *{
     font-family: Arial;
+    text-decoration: none;
     margin: 0;
     padding: 0;
 }
@@ -127,7 +128,6 @@ div.card{
 }
 
 div.card h1{
-    font-family: 70px;
     margin: 0 auto;
     font-weight: bold;
     max-width: 600px;

@@ -36,14 +36,22 @@
         <div class="card">
             <div class="genauDesc">
                 <img src="pictures/lesson.png">
-                <div>
+                <div class="genauDescText">
                     <!--the first row of description-->
                     <div class="genauRow1">
                         <div class="androidIcon island">
                             <img src="pictures/Android-Logo-New.png" id="android">
+                            <div class="cardDesc">
+                                <h3>Anrdoid apliaction</h3>
+                                <p>Uses official Anrdoid libraries for back and frontend</p>
+                            </div>
                         </div>
                         <div class="name island">
                             <h1>GENAU!</h1>
+                            <div>
+                                <h3>Learn German</h3>
+                                <p>A simpler way to learn vocabulary</p>
+                            </div>
                         </div>
                         <div class="crop island">
                             <img src="pictures/main.png">
@@ -57,15 +65,14 @@
                             and enjoy a nice array of features customized to learning German.
                         </p>
                     </div>
-                    <div class="buttonRow">
-                        <div class="island">
-                            GitHub
-                        </div>
-                        <div class="island">
-                            Download
-                        </div>
-
+                    <div class="development">
+                        <h1>DEVELOPMENT:</h1>
+                        <p>
+                            This app helped me understand the process of developing a service and its architecture. I used Technologies
+                            such as <b>SQL</b>, <b>Kotlin</b>, AnrdoidStudio and jetpack compose library.
+                        </p>
                     </div>
+                    
                     <!--key app features-->
                     <div class="row">
                         <div class="blob">Autotranslate</div>
@@ -79,42 +86,19 @@
                     </div>                
                 </div>
             </div>
-            <div class="row">
-                
+            <!--Project github page links-->
+            <div class="buttonRow">
+                <a href="https://github.com/TPdkr/learner">
+                    <div class="island" id="gitGenau">
+                        <h1>GitHub</h1>
+                    </div>
+                </a>
+                <a href="https://github.com/TPdkr/learner/blob/9326e204f2a658139270883de9a33939ca515030/genau.apk" download>
+                    <div class="island" id="downloadGenau">
+                        <h1>Download</h1>
+                    </div>
+                </a>
             </div>
-            <div class="island">
-                <h2>Description:</h2>
-                <p>
-                    
-                </p>
-                <p>
-                    The user can input words and organize them into courses and word sets. The choice for article and 
-                    plural form is made easy with special buttons. 
-                </p>
-                <h2>Development:</h2>
-                <p>
-                    This app helped me understand the process of developing a service and its architecture. I used Technologies
-                    such as <b>SQL</b>, <b>Kotlin</b>, AnrdoidStudio and jetpack compose library.
-                </p>
-                
-            </div>
-            <div class="row" id="AppFeatures">
-                <img src="pictures/androidSt.webp">
-                <div>            
-                    <h2>Features:</h2>
-                    <ul>
-                        <li>Easily add german nouns with article and plural form</li>
-                        <li>Manage courses and word sets</li>
-                        <li>Auto translate german words</li>
-                        <li>Efficiently review vocabulary</li>
-                        <li>Get motivational messages at the end of a lesson</li>
-                    </ul>
-                </div>
-                <img src="pictures/ic_launcher.jpg" id="appIcon">
-            </div>
-            <a href="https://github.com/TPdkr/Learner" class="outlined-button" id="toGitHub">
-                Github
-            </a>
         </div>
         <!--Intermidiate header-->
         <div class="title" id="mid_header">
