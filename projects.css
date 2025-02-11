@@ -139,9 +139,6 @@ div div.crop.island{
 div div.crop.island img{
     width: 100%;
     height: auto;
-    /*display: block;
-    padding: 0;
-    margin: 0;*/
     object-fit: cover;
 }
 
@@ -152,7 +149,6 @@ div.cropTitle{
     border-radius: 20px;
     padding: var(--medium-pad);
     display: flex;
-    
 }
 
 div.cropTitle h1{
@@ -186,15 +182,28 @@ div#gitGenau.island:active{
 }
 /*download button*/
 div#downloadGenau.island{
+    /*box setting*/
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: flex-start;
     height: 100px;
+    /*color*/
     background-color: var(--onPrimary);
     color: var(--primary);
+    /*border*/
     border-color: var(--primary);
     border-width: 2px;
     border-style: solid;
+    /*animation*/
     transition: background-color 0.5s, 
     color 0.5s, 
     border-color 0.5s;
+}
+
+div#downloadGenau.island h1{
+    margin: 0;
+    margin-right: var(--medium-pad);
 }
 
 div#downloadGenau.island:hover{
