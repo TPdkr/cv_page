@@ -216,7 +216,15 @@ div#downloadGenau.island:hover{
 div#downloadGenau.island:active{
     opacity: 0.7;
 }
+/**CV page====================================================================*/
+.projectDesc{
+    margin: var(--large-pad) 0;
+    text-align: left;
+}
 
+div.projectDesc h1, div.projectDesc p{
+    margin: 0;
+}
 /**WEBSITE=====================================================================*/
 .website_pic{
     height: 400px;
