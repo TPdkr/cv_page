@@ -11,12 +11,18 @@
             /*switch the state when reach out button is pressed*/
             function reachOutSwitch(){
                 const button = document.querySelector('.js-reachOut');
+                const menu = document.querySelector("#reachOutMenu");
                 if(button.innerText === "reach out"){
                     button.innerHTML="close pop-up";
-                    document.querySelector("#reachOutMenu").style.height = "100px";
+                    menu.style.height = "150px";
+                    menu.style.padding ="var(--medium-pad)";
+                    menu.style.borderWidth = "3px";
+                    
                 } else {
                     button.innerHTML="reach out";
-                    document.querySelector("#reachOutMenu").style.height = "0";
+                    menu.style.height = "0";
+                    menu.style.padding ="0 var(--medium-pad)";
+                    menu.style.borderWidth = "0";
                 }
             }
             /*hide navbar on scroll**/

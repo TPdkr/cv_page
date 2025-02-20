@@ -148,7 +148,7 @@ div.outlined-card{
     background-color: var(--surface);
     color: var(--onSurface);
     border-color: var(--onSurface);
-    border-width: 5px;
+    border-width: 3px;
     border-style: solid;
     text-align: center;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
@@ -341,7 +341,10 @@ div#main_title.profile_title{
 
 #reachOutMenu{
     height: 0;
-    transition: height 0.5s;
+    padding: 0 var(--medium-pad);
+    border-width: 0;
+    overflow: hidden;
+    transition: height 0.5s, padding 0.5s, margin 0.5s, border-width 0.5s;
 }
 
 /**languages grid*/
