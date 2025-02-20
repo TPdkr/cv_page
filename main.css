@@ -61,7 +61,8 @@ div.navbar {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-
+    /**animation*/
+    transition: top 0.3s;
 }
 
 div.navbar a.text-button{
@@ -123,6 +124,32 @@ div.card{
     border-radius: 30px;
     background-color: var(--surfaceDim);
     color: var(--onSurface);
+    border-color: var(--surfaceDim);
+    border-width: 5px;
+    border-style: solid;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+/**CARD*/
+div.outlined-card{
+    /**box setting*/
+    margin: var(--small-pad) auto;
+    padding: var(--medium-pad);
+    width: 90%;
+    min-width: 100px;
+    max-width: 990px;
+    /**flex box settings*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /**color and shape*/
+    border-radius: 30px;
+    background-color: var(--surface);
+    color: var(--onSurface);
+    border-color: var(--onSurface);
+    border-width: 5px;
+    border-style: solid;
     text-align: center;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
 }
@@ -307,8 +334,14 @@ div#main_title.profile_title{
     max-width: 990px;
 }
 
+/**reach out menu*/
 #reachOut{
     width: 200px;
+}
+
+#reachOutMenu{
+    height: 0;
+    transition: height 0.5s;
 }
 
 /**languages grid*/

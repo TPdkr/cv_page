@@ -7,6 +7,30 @@
         <link rel="stylesheet" href="./main.css">
     </head>
     <body>
+        <script>
+            /*switch the state when reach out button is pressed*/
+            function reachOutSwitch(){
+                const button = document.querySelector('.js-reachOut');
+                if(button.innerText === "reach out"){
+                    button.innerHTML="close pop-up";
+                    document.querySelector("#reachOutMenu").style.height = "100px";
+                } else {
+                    button.innerHTML="reach out";
+                    document.querySelector("#reachOutMenu").style.height = "0";
+                }
+            }
+            /*hide navbar on scroll**/
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.querySelector(".navbar").style.top = "5px";
+                } else {
+                    document.querySelector(".navbar").style.top = "-50px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
         <div class="navbar">
             <a href="projects.html" class="text-button">
                 <h2 >projects</h2>
@@ -42,11 +66,20 @@
                     <button class="outlined-button">download my CV</button>
                 </a>
                 <a>
-                    <button class="filled-button" id="reachOut">reach out</button>
+                    <button class="filled-button js-reachOut" id="reachOut" onclick="
+                        reachOutSwitch();
+                    ">
+                    reach out</button>
                 </a>
                 <a href="docs/cv.pdf" download>
                     <button class="outlined-button">my transcript</button>
                 </a>
+            </div>
+        </div>
+        <!--The user can reach out to me-->
+        <div id="reachOutMenu" class="outlined-card">
+            <div class="row">
+                Reach out menu
             </div>
         </div>
         <!--This is ABOUT section that covers general info-->
