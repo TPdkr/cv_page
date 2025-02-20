@@ -125,7 +125,7 @@ div.card{
     background-color: var(--surfaceDim);
     color: var(--onSurface);
     border-color: var(--surfaceDim);
-    border-width: 5px;
+    border-width: 3px;
     border-style: solid;
     text-align: center;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
@@ -340,11 +340,55 @@ div#main_title.profile_title{
 }
 
 #reachOutMenu{
+    /*default state and animation*/
     height: 0;
     padding: 0 var(--medium-pad);
     border-width: 0;
     overflow: hidden;
     transition: height 0.5s, padding 0.5s, margin 0.5s, border-width 0.5s;
+    /*grid formating*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: var(--medium-pad);
+}
+
+div.reachOutCard{
+    /*box*/
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: var(--medium-pad);
+    height: 110px;
+    /*color*/
+    background-color: var(--onTertiaryContainer);
+    color: var(--tertiaryContainer);
+    /*animation*/
+    transition: opacity 0.5s, box-shadow 0.15s;
+}
+
+div.reachOutCard:hover{
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+div.reachOutCard:active{
+    opacity: 0.5;
+}
+
+
+div.reachOutCard h1{
+    font-size: 60px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 3px;
+    border-color: currentColor;
+    border-style: solid;
+}
+
+div.reachOutCard p{
+    margin-top: var(--small-pad);
+    text-align: left;
 }
 
 /**languages grid*/
