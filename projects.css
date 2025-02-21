@@ -63,14 +63,14 @@ GENAU
 IMAGE GALLERY OF APP
 -------------------------------------------
 */
-.geanuGallery{
+.genauGallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: var(--medium-pad);
     align-items: start;
 }
 
-.geanuGallery img{
+.genauGallery img{
     width: 100%;
     height: auto;
 }
@@ -87,16 +87,12 @@ IMAGE GALLERY OF APP
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
-    min-height: 0;
-    height: 100%;
 }
 
 /* Ensure images inside islands don't affect height */
 .genauSubGallery div.island img {
-    height: 100%;
-    object-fit: contain; /*Prevents distortion*/
+    object-fit: contain; 
 }
 
 /**
@@ -202,6 +198,10 @@ CV PAGE
 
 div.projectDesc h1, div.projectDesc p{
     margin: 0;
+}
+
+#toGitHub{
+    display: block;
 }
 
 /**
