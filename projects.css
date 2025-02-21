@@ -1,56 +1,68 @@
-/**PROJECT PAGE*/
-/**APP=========================================================================*/
+/**
+-------------------------------------------
+PROJECT.CSS CUSTOMIZATION
+This file formats the projects page which
+contains all my projects
+-------------------------------------------
+*/
+
+/**
+===========================================
+GENERAL
+===========================================
+*/
+
 /**the title part*/
-div.projectTitle h1{
-    text-align: left;
+.projectTitle h1{
     font-size: 60px;
-    margin: 0;
     margin-bottom: var(--large-pad);
 }
 
-div.projectTitle div.row{
+/**we want to center the items vertically*/
+.projectTitle div.row{
     align-items: center;
 }
 
-/*blob row of features*/
+/**blob row of features*/
 div.row.features{
     justify-content: flex-start;
 }
 
+/*mid title section*/
+.projectMidTitle h2{
+    margin: var(--large-pad) 0;
+}
+
+/**
+===========================================
+GENAU
+===========================================
+*/
+
 /*TEXT BLOCK the text description*/
-div.genauDescText{
+.genauDescText{
+    /*grid*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: left;
-    margin-top: var(--medium-pad);
     column-gap: var(--medium-pad);
+    /*margins*/
+    margin-top: var(--medium-pad);
 }
 
-div.genauDescText h1{
-    margin: 0;
-}
-
-div.genauDescText p{
-    padding: 0;
-    margin: 0;
-}
-
-div.genauDescText div.desc{
+.genauDescText div.desc{
     padding: var(--medium-pad);
+    /*border*/
     border-radius: 20px;
     border-color: var(--onSurface);
     border-width: 2px;
     border-style: solid;
 }
 
-/*MID TITLE section*/
-div.projectMidTitle h1{
-    text-align: left;
-    font-size: 60px;
-    margin: var(--large-pad) 0;
-}
-
-/*IMAGE GALLERY OF APP*/
+/**
+-------------------------------------------
+IMAGE GALLERY OF APP
+-------------------------------------------
+*/
 .geanuGallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -63,90 +75,93 @@ div.projectMidTitle h1{
     height: auto;
 }
 
-div.genauSubGallery{
+.genauSubGallery{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    row-gap: var(--medium-pad);
     height: 100%;
 }
 
-div.genauSubGallery div.island{
+.genauSubGallery div.island{
     display: flex;
     flex: 1;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    text-align: left;
     min-height: 0;
     height: 100%;
-    
 }
 
 /* Ensure images inside islands don't affect height */
-div.genauSubGallery div.island img {
+.genauSubGallery div.island img {
     height: 100%;
-    object-fit: contain; /* Prevents distortion */
+    object-fit: contain; /*Prevents distortion*/
 }
 
-/**ANDROID ICON CARD*/
-div div.androidIcon.island{
+/**
+-------------------------------------------
+ANDROID ICON CARD
+-------------------------------------------
+*/
+.androidIcon.island{
     /*color*/
     background-color: var(--onTertiaryContainer);
     color: var(--tertiaryContainer);
-    margin-bottom: var(--small-pad);
 }
 
-div div.androidIcon.island div{
+.androidIcon.island div{
     margin-top: auto;
 }
 
-div div.androidIcon.island div p{
+.androidIcon.island div p{
     padding: 0;
 }
 
-/*APP NAME CARD*/
-div div.name.island{
+/**
+-------------------------------------------
+APP NAME CARD
+-------------------------------------------
+*/
+.app-name.island{
     /*colors*/
     background-color: var(--onSurface);
     color: var(--surface);
-    margin: var(--small-pad) 0;
 }
 
-div div.name.island h1{
-    font-size: 40px;
-    margin: 0;
-}
-
-div div.name.island div{
+.app-name.island div{
     margin-top: auto;
 }
 
-div div.name.island div p{
+.app-name.island div p{
     padding: 0;
 }
 
-/*CLOSE UP CARD*/
-div div.crop.island{
+/**
+-------------------------------------------
+CLOSE UP CARD
+-------------------------------------------
+*/
+.app-crop.island{
     position: relative;
-    width: 100%;
     overflow: hidden;
-    margin: 0;
     padding: 0;
-    margin-top: var(--small-pad);
 }
 
-div div.crop.island img{
+div.app-crop.island img{
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-div.cropTitle{
+.cropTitle{
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.6); 
+    /*box*/
     border-radius: 20px;
     padding: var(--medium-pad);
+    /*flex settings*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -154,69 +169,32 @@ div.cropTitle{
 
 div.cropTitle p{
     margin: 0;
-   padding: 0;
+    padding: 0;
 }
 
-/*BUTTON ROW*/
+/**
+-------------------------------------------
+BUTTON ROW
+-------------------------------------------
+*/
 .buttonRow{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--medium-pad);
     height: auto;
-    text-align: left;
 }
-/*github page button*/
-div#gitGenau.island{
+
+/*github page button and download button*/
+#gitGenau, #downloadGenau{
+    padding: var(--medium-pad);
     height: 100px;
-    background-color: var(--primary);
-    color: var(--onPrimary);
-    transition: opacity 0.5s, box-shadow 0.15s;
 }
 
-div#gitGenau.island:hover{
-    opacity: 0.7;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
-}
-
-div#gitGenau.island:active{
-    opacity: 0.5;
-}
-/*download button*/
-div#downloadGenau.island{
-    /*box setting*/
-    display: flex;
-    flex-direction: row;
-    justify-items: flex-start;
-    align-items: flex-start;
-    height: 100px;
-    /*color*/
-    background-color: var(--onPrimary);
-    color: var(--primary);
-    /*border*/
-    border-color: var(--primary);
-    border-width: 2px;
-    border-style: solid;
-    /*animation*/
-    transition: background-color 0.5s, 
-    color 0.5s, 
-    border-color 0.5s;
-}
-
-div#downloadGenau.island h1{
-    margin: 0;
-    margin-right: var(--medium-pad);
-}
-
-div#downloadGenau.island:hover{
-    border-color: var(--primaryContainer);
-    background-color: var(--primaryContainer);
-    color: var(--onPrimaryContainer);
-}
-
-div#downloadGenau.island:active{
-    opacity: 0.7;
-}
-/**CV page====================================================================*/
+/**
+===========================================
+CV PAGE
+===========================================
+*/
 .projectDesc{
     margin: var(--large-pad) 0;
     text-align: left;
@@ -225,7 +203,12 @@ div#downloadGenau.island:active{
 div.projectDesc h1, div.projectDesc p{
     margin: 0;
 }
-/**WEBSITE=====================================================================*/
+
+/**
+===========================================
+WEBSITE
+===========================================
+*/
 .website_pic{
     height: 400px;
 }

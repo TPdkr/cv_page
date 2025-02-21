@@ -224,6 +224,13 @@ TITLE
 }
 
 .title h2{
+    font-size: 40px;
+    line-height: 30px;
+    margin: var(--small-pad) 0;
+}
+
+.title h3{
+    font-size: 25px;
     line-height: 30px;
 }
 
