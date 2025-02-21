@@ -37,10 +37,12 @@
     padding: 0;
 }
 
+/*list dot should be with the text*/
 ul{
     list-style-position: inside;
 }
 
+/*ground color*/
 body{
     color: var(--onSurface);
     background-color: var(--surface);
@@ -108,63 +110,32 @@ div.contentBox{
     max-width: 1000px;
 }
 
-/**CARD*/
-div.card{
-    /**box setting*/
+/**CARD BASE*/
+.card-base {
+    /*box setting*/
     margin: var(--small-pad) auto;
     padding: var(--medium-pad);
     width: 90%;
-    min-width: 100px;
     max-width: 1000px;
-    /**flex box settings*/
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    /**color and shape*/
     border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+    /*content*/
+    text-align: left;
+}
+
+/*this is a specific card that is filled with color*/
+.card{
+    /*cotnet color*/
     background-color: var(--surfaceDim);
     color: var(--onSurface);
+    /*border*/
     border-color: var(--surfaceDim);
     border-width: 3px;
     border-style: solid;
-    text-align: center;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
-}
-
-/**CARD*/
-div.outlined-card{
-    /**box setting*/
-    margin: var(--small-pad) auto;
-    padding: var(--medium-pad);
-    width: 90%;
-    min-width: 100px;
-    max-width: 990px;
-    /**flex box settings*/
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    /**color and shape*/
-    border-radius: 30px;
-    background-color: var(--surface);
-    color: var(--onSurface);
-    border-color: var(--onSurface);
-    border-width: 3px;
-    border-style: solid;
-    text-align: center;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
-}
-
-div.card h1{
-    margin: 0 auto;
-    font-weight: bold;
-    max-width: 600px;
 }
 
 div.card h2{
     margin-top:10px;
-    margin: 0 auto;
-    font-weight: bold;
-    max-width: 600px;
 }
 
 div.card p{
