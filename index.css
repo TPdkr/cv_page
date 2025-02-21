@@ -1,5 +1,16 @@
-/**CUSTOMIZATION*/
-/*page main title*/
+/**
+-------------------------------------------
+INDEX.HRML CUSTOMIZATION
+This file covers the properties of content
+in the main file of the website.
+-------------------------------------------
+*/
+
+/**
+===========================================
+MAIN TITLE
+===========================================
+*/
 #main_title h1{
     font-size: 70px;
 }
@@ -27,6 +38,11 @@ div#main_title.profile_title{
     max-width: 990px;
 }
 
+/**
+===========================================
+REACH OUT MENU
+===========================================
+*/
 /**reach out menu*/
 #reachOut{
     width: 200px;
@@ -68,7 +84,6 @@ div.reachOutCard:active{
     opacity: 0.5;
 }
 
-
 div.reachOutCard h1{
     font-size: 60px;
     border-left-width: 0;
@@ -83,6 +98,12 @@ div.reachOutCard p{
     margin-top: var(--small-pad);
     text-align: left;
 }
+
+/**
+===========================================
+ABOUT ME HEADER CARD
+===========================================
+*/
 
 /**languages grid*/
 .languages{
@@ -120,7 +141,11 @@ div.skills{
     justify-content: flex-start;
 }
 
-/**UNIVERSITY DESCRIPTION*/
+/**
+===========================================
+UNIVERSITY DESCRIPTION
+===========================================
+*/
 div.uniDesc{
     margin: 0;
     padding: 0;
@@ -304,6 +329,11 @@ div.workCard div.blob{
     align-self: flex-end;
 }
 
+/**
+===========================================
+SCHOOL DESCRIPTION
+===========================================
+*/
 div.schoolDesc{
     text-align: left;
     display: grid;
