@@ -35,15 +35,14 @@ div#main_title.profile_title{
 #reachOutMenu{
     /**card setting*/
     /**box setting*/
-    margin: var(--small-pad) auto;
+    margin: 0 auto;
     width: 90%;
     min-width: 100px;
     max-width: 990px;
     /**color and shape*/
     border-radius: 30px;
-    background-color: var(--primaryContainer);
-    color: var(--onPrimaryContainer);
-    border-color: var(--primaryContainer);
+    background-color: var(--tertiaryContainer);
+    border-color: var(--tertiaryContainer);
     border-width: 3px;
     border-style: solid;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
