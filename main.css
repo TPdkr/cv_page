@@ -32,7 +32,7 @@ ROOT
     padding: 0;
 }
 
-/*list dot should be with the text no lists used*/
+/*list dot should be with the text*/
 ul{
     list-style-position: inside;
 }
@@ -63,7 +63,7 @@ div.navbar {
     flex-direction: row;
     justify-content: space-evenly;
     /**animation*/
-    transition: top 0.3s;
+    transition: top 0.3s, transform 0.3s ease-in-out;
 }
 
 div.navbar a.text-button{
@@ -74,34 +74,34 @@ div.title a.text-button{
     color: var(--onSurface);
 }
 
+.navbar:hover {
+    transform: translateY(-4px);
+}
+
 /**
 ===========================================
 BLOBS
 ===========================================
 */
-.blob{
+.blob , .blob-outlined{
     display: inline-block;
     padding: 10px;
     margin: 5px;
     font-weight: bold;
     font-size: 15px;
     border-radius: 20px;
+}
+
+.blob{
     background-color: var(--onSurface);
     color: var(--surface);
 }
 
 .blob-outlined{
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 20px;
     color: var(--onSurface);
     border-color: var(--onSurface);
     border-width: 2px;
     border-style: solid;
-
 }
 
 /**
@@ -135,14 +135,25 @@ CARD BASE
 }
 
 /*this is a specific card that is filled with color*/
+.card, .card-tertiary{
+    border-width: 3px;
+    border-style: solid;
+}
+
 .card{
     /*cotnet color*/
     background-color: var(--surfaceDim);
     color: var(--onSurface);
     /*border*/
     border-color: var(--surfaceDim);
-    border-width: 3px;
-    border-style: solid;
+}
+
+.card-tertiary{
+    /*cotnet color*/
+    background-color: var(--tertiaryContainer);
+    color: var(--onTertiaryContainer);
+    /*border*/
+    border-color: var(--tertiaryContainer);
 }
 
 .card h2{
@@ -169,7 +180,7 @@ CARD BASE
     border-radius: 20px;
 }
 
-/*in case lists are used again*/
+/*in case lists are used again!!*/
 .card ul {
     margin: 0 auto;
     display: inline-block; 
@@ -232,6 +243,7 @@ This section contains 3 main button types used on this website
 */
 
 /**
+OUTLINED
 * this is an outlined button class and its states
 * best used for options that should not distract the user
 */
@@ -248,7 +260,6 @@ This section contains 3 main button types used on this website
     font-weight: bold;
     color: var(--primary);
     /**transition property*/
-    text-decoration: none;
     transition: background-color 0.5s, 
     color 0.5s, 
     border-color 0.5s;
@@ -265,6 +276,7 @@ This section contains 3 main button types used on this website
 }
 
 /**
+FILLED
 * this is a filled button class best used for important 
 * and attention grabbing buttons
 */
@@ -281,7 +293,6 @@ This section contains 3 main button types used on this website
     font-weight: bold;
     color: var(--onPrimary);
     transition: opacity 0.5s, box-shadow 0.15s;
-    text-decoration: none;
 }
 
 .filled-button:hover{
@@ -293,7 +304,10 @@ This section contains 3 main button types used on this website
     opacity: 0.5;
 }
 
-/**this is a text button like the ones in the navbar*/
+/**
+TEXT
+this is a text button like the ones in the navbar
+*/
 .text-button {
     cursor: pointer;
     text-decoration: none;
@@ -307,4 +321,3 @@ This section contains 3 main button types used on this website
 .text-button:active{
     opacity: 0.5;
 }
-

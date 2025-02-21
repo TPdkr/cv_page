@@ -33,25 +33,12 @@ div#main_title.profile_title{
 }
 
 #reachOutMenu{
-    /**card setting*/
-    /**box setting*/
-    margin: 0 auto;
-    width: 90%;
-    min-width: 100px;
-    max-width: 990px;
-    /**color and shape*/
-    border-radius: 30px;
-    background-color: var(--tertiaryContainer);
-    border-color: var(--tertiaryContainer);
-    border-width: 3px;
-    border-style: solid;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
     /*default state and animation*/
     height: 0;
     padding: 0 var(--medium-pad);
     border-width: 0;
     overflow: hidden;
-    transition: height 0.5s, padding 0.5s, margin 0.5s, border-width 0.5s;
+    transition: height 0.5s ease-out, padding 0.5s, margin 0.5s, border-width 0.5s;
     /*grid formating*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
