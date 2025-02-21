@@ -16,7 +16,7 @@
                 const menu = document.querySelector("#reachOutMenu");
                 if(button.innerText === "reach out"){
                     button.innerHTML="close pop-up";
-                    menu.style.height = "150px";
+                    menu.style.height = "auto";
                     menu.style.padding ="var(--medium-pad)";
                     menu.style.borderWidth = "3px";
                     menu.style.margin = "var(--large-pad) auto";
@@ -41,6 +41,7 @@
                 prevScrollpos = currentScrollPos;
             }
         </script>
+        <!--NAVIGATION BAR-->
         <div class="navbar">
             <a href="projects.html" class="text-button">
                 <h2 >projects</h2>
@@ -51,15 +52,15 @@
             <a href="index.html" class="text-button">
                 <h2>home</h2>
             </a>
-            <a href="index.html#main_tile" class="text-button">
+            <a href="index.html#main_title" class="text-button">
                 <h2>about me</h2>
             </a>
             <a class="text-button">
                 <h2>the website</h2>
             </a>
         </div>
-        <!--HEADER TITLE-->
-        <div class="title  profile_title" id="main_title">
+        <!--HEADER TITLE id for linking in navbar-->
+        <div class="content-box title  profile_title" id="main_title">
             <div>
                 <img src="pictures/profile.jpg">
             </div>
@@ -69,28 +70,26 @@
             </div>
             
         </div>
-        <!--This is a row with key buttons for recruiters-->
-        <div id="buttonPanel">
-            <div class="row">
-                <a href="docs/cv.pdf" download>
-                    <button class="outlined-button">download my CV</button>
-                </a>
-                <a>
-                    <button class="filled-button js-reachOut" id="reachOut" onclick="
-                        reachOutSwitch();
-                    ">
-                    reach out</button>
-                </a>
-                <a href="docs/cv.pdf" download>
-                    <button class="outlined-button">my transcript</button>
-                </a>
-            </div>
+        <!--BUTTON ROW: This is a row with key buttons for recruiters-->
+        <div class="content-box row">
+            <a href="docs/cv.pdf" download>
+                <button class="outlined-button">download my CV</button>
+            </a>
+            <a>
+                <button class="filled-button js-reachOut" id="reachOut" onclick="
+                    reachOutSwitch();
+                ">
+                reach out</button>
+            </a>
+            <a href="docs/cv.pdf" download>
+                <button class="outlined-button">my transcript</button>
+            </a>
         </div>
         <!--The user can reach out to me-->
         <div id="reachOutMenu" class="card-base card-tertiary">
             <!--email address-->
             <a href="mailto:tpdkrt@gmail.com" target="_blank">
-                <div class="reachOutCard">
+                <div class="filled-button reachOutCard">
                     <h1>
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     </h1>
@@ -101,7 +100,7 @@
             </a>
             <!--phone number-->
             <a href="tel:+4915256406909" target="_blank">
-                <div class="reachOutCard">
+                <div class="filled-button reachOutCard">
                     <h1>
                         <i class="fa fa-phone" aria-hidden="true"></i>
                     </h1>
@@ -112,7 +111,7 @@
             </a>
             <!--github-->
             <a href="https://github.com/TPdkr" target="_blank">
-                <div class="reachOutCard">
+                <div class="filled-button reachOutCard">
                     <h1>
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </h1>
@@ -123,7 +122,7 @@
             </a>
             <!--else-->
             <a target="_blank">
-                <div class="reachOutCard">
+                <div class="filled-button reachOutCard">
                     <h1>
                         <i class="fa fa-snowflake-o" aria-hidden="true"></i>
                     </h1>
@@ -134,9 +133,9 @@
             </a>
         </div>
         <!--This is ABOUT section that covers general info-->
-        <div class="card-base card" id="aboutMe">
+        <div class="card-base card">
             <div class="aboutHeader">
-                <div class="island about">
+                <div class="island">
                     <h1>Education &#128218</h2>
                     <p>
                         I enjoy learning and expanding my horizons, while exceling at it. There are always things out
@@ -147,7 +146,7 @@
                         well. Currently, I am in my second semester of 2nd year and looking for <b>internship opportunities</b>.
                     </p>
                 </div>
-                <div class="island about">
+                <div class="island">
                     <h1>About me &#128126</h1>
                     <p>
                         I am a university student passionate about computers and software development.</p>
@@ -157,14 +156,14 @@
                         organaizing events and mentoring.
                     </p>
                 </div>
-                <div class="about languages">
+                <div class="languages">
                     <div class="island"><h1>Native</h1>Russian</div>
                     <div class="island"><h1>C2</h1>English</div>
                     <div class="island"><h1>A2</h1>German</div>                    
                 </div>
             </div>
         </div>
-        <div class="contentBox row skills">
+        <div class="content-box row skills">
             <div class="blob">C++</div>
             <div class="blob">C</div>
             <div class="blob">Kotlin</div>
@@ -180,11 +179,11 @@
             <div class="blob-outlined">Anrdoid Studio</div>
             <div class="blob-outlined">Intelij IDEA</div>
         </div>
-        <!--intermediate title-->
+        <!--intermediate title has id for links to work-->
         <div class="title" id="edu_title">
-            <h2>
+            <h1>
                 Education:
-            </h2>
+            </h1>
         </div>
         <!--University info card-->
         <div class="card-base card" id="edu">

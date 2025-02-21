@@ -109,7 +109,7 @@ BLOBS
 CONTENT BOX - allows for content that isn't in card to have the same width
 ===========================================
 */
-.contentBox{
+.content-box{
     /**box setting*/
     margin: var(--small-pad) auto;
     width: 90%;
@@ -200,7 +200,7 @@ div.island{
 ROW
 ===========================================
 */
-div.row {
+.row {
     /**flex box settings*/
     display: flex;
     flex-direction: row;
@@ -215,16 +215,12 @@ TITLE
 */
 /**title cotntains the main info about the page*/
 .title {
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
-    /**flex box settings*/
-    display:flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .title h1{
-    font-size: 30px;
+    font-size: 70px;
 }
 
 .title h2{
