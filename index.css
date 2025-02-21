@@ -291,6 +291,7 @@ div.workCard{
 
 div.workCard h2{
     text-align: left;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -328,10 +329,6 @@ div.schoolDesc div img{
 
 div.schoolDesc div.desc{
     padding-right: var(--small-pad);
-}
-
-div.schoolDesc div h2{
-    font-size: 25px;
 }
 
 div.schoolDesc div p{

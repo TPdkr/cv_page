@@ -1,16 +1,9 @@
+/**
+===========================================
+ROOT
+===========================================
+*/
 :root{
-    /**--source: #441E35;
-    --surface: #fff8f8;
-    --onSurface: #211a1d;
-    --surfaceDim: #e5d6db;
-    --primaryContainer: #ffd8ea;
-    --onPrimaryContainer:#6b3455;
-    --primary: #874b6e;
-    --onPrimary: #ffffff;
-    --tertiaryContainer: #ffdbca;
-    --onTertiaryContainer: #653d27;
-    */
-
     /**website colors*/
     --source: #742CFF;
     --surface: #141218;
@@ -25,11 +18,13 @@
     --invSurvace:#2c2a31;
 
     /*website padding values**/
+    --tiny-pad: 5px;
     --small-pad: 10px;
     --medium-pad: 20px;
     --large-pad: 30px;
 }
 
+/*set the default state*/
 *{
     font-family: Arial;
     text-decoration: none;
@@ -37,7 +32,7 @@
     padding: 0;
 }
 
-/*list dot should be with the text*/
+/*list dot should be with the text no lists used*/
 ul{
     list-style-position: inside;
 }
@@ -48,7 +43,11 @@ body{
     background-color: var(--surface);
 }
 
-/**navigation bar*/
+/**
+===========================================
+NAVIGATION BAR
+===========================================
+*/
 div.navbar {
     position: sticky;
     top:5px;
@@ -75,8 +74,12 @@ div.title a.text-button{
     color: var(--onSurface);
 }
 
-/**BLOBS*/
-div.blob{
+/**
+===========================================
+BLOBS
+===========================================
+*/
+.blob{
     display: inline-block;
     padding: 10px;
     margin: 5px;
@@ -87,7 +90,7 @@ div.blob{
     color: var(--surface);
 }
 
-div.blob-outlined{
+.blob-outlined{
     display: inline-block;
     padding: 10px;
     margin: 5px;
@@ -101,8 +104,12 @@ div.blob-outlined{
 
 }
 
-/**content box which isnt card*/
-div.contentBox{
+/**
+===========================================
+CONTENT BOX - allows for content that isn't in card to have the same width
+===========================================
+*/
+.contentBox{
     /**box setting*/
     margin: var(--small-pad) auto;
     width: 90%;
@@ -110,14 +117,18 @@ div.contentBox{
     max-width: 1000px;
 }
 
-/**CARD BASE*/
+/**
+===========================================
+CARD BASE
+===========================================
+*/
 .card-base {
     /*box setting*/
     margin: var(--small-pad) auto;
     padding: var(--medium-pad);
     width: 90%;
     max-width: 1000px;
-    border-radius: 30px;
+    border-radius: 40px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
     /*content*/
     text-align: left;
@@ -134,36 +145,49 @@ div.contentBox{
     border-style: solid;
 }
 
-div.card h2{
-    margin-top:10px;
+.card h2{
+    font-size: 40px;
 }
 
-div.card p{
+.card h3{
+    font-size: 30px;
+    margin: var(--tiny-pad) 0;
+}
+
+.card h4{
+    margin-bottom: var(--small-pad);
+}
+
+.card p{
     margin: 0 auto;
     padding: 10px 0;
     max-width: 600px;
 }
 
-div.card img{
+.card img{
     max-width: 600px;
     border-radius: 20px;
 }
 
-div.card ul {
-    text-align: left;
+/*in case lists are used again*/
+.card ul {
     margin: 0 auto;
     display: inline-block; 
 }
 
 /**in card island*/
-div.card div.island{
+div.island{
     padding: var(--medium-pad);
     background-color: var(--invSurvace);
     color: var(--onSurface);
     border-radius: 20px;
 }
 
-/**row box that contains body text*/
+/**
+===========================================
+ROW
+===========================================
+*/
 div.row {
     /**flex box settings*/
     display: flex;
@@ -172,6 +196,11 @@ div.row {
     flex-wrap: wrap;
 }
 
+/**
+===========================================
+TITLE
+===========================================
+*/
 /**title cotntains the main info about the page*/
 .title {
     padding: 20px;
@@ -194,9 +223,12 @@ div.row {
     margin: 10px;
     font-size: 25px;
 }
+
 /**
+===========================================
 BUTTONS
 This section contains 3 main button types used on this website
+===========================================
 */
 
 /**
