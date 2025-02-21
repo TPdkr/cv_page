@@ -122,6 +122,7 @@ CONTENT BOX - allows for content that isn't in card to have the same width
 CARD BASE
 ===========================================
 */
+/*general card base*/
 .card-base {
     /*box setting*/
     margin: var(--small-pad) auto;
@@ -242,30 +243,35 @@ This section contains 3 main button types used on this website
 ===========================================
 */
 
+/*common properties:*/
+button, .filled-button, .outlined-button, .text-button {
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.outlined-button, .filled-button{
+    padding: var(--small-pad);
+    /**border related properties*/
+    border-radius: 30px;
+    border-color: var(--primary);
+    border-width: 2px;
+    border-style: solid;
+}
+
 /**
 OUTLINED
 * this is an outlined button class and its states
 * best used for options that should not distract the user
 */
 .outlined-button {
-    padding: 10px;
-    /**border related properties*/
-    border-radius: 30px;
-    border-color: var(--primary);
-    border-width: 2px;
-    border-style: solid;
     /**font and background*/
     background-color: var(--onPrimary);
-    cursor: pointer;
-    font-weight: bold;
     color: var(--primary);
-    /**transition property*/
-    transition: background-color 0.5s, 
-    color 0.5s, 
-    border-color 0.5s;
 }
 
 .outlined-button:hover{
+    /*change on hover*/
     border-color: var(--primaryContainer);
     background-color: var(--primaryContainer);
     color: var(--onPrimaryContainer);
@@ -281,21 +287,13 @@ FILLED
 * and attention grabbing buttons
 */
 .filled-button {
-    padding: 10px;
-    /**border related properties*/
-    border-radius: 30px;
-    border-color: var(--primary);
-    border-width: 2px;
-    border-style: solid;
     /*background color*/
     background-color: var(--primary);
-    cursor: pointer;
-    font-weight: bold;
     color: var(--onPrimary);
-    transition: opacity 0.5s, box-shadow 0.15s;
 }
 
 .filled-button:hover{
+    /*hover for filled button*/
     opacity: 0.7;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
 }
@@ -308,12 +306,6 @@ FILLED
 TEXT
 this is a text button like the ones in the navbar
 */
-.text-button {
-    cursor: pointer;
-    text-decoration: none;
-    transition: opacity 0.5s, text-shadow 0.5s;
-}
-
 .text-button:hover{
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
