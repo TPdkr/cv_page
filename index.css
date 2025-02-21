@@ -42,7 +42,8 @@ REACH OUT MENU
     padding: 0 var(--medium-pad);
     border-width: 0;
     overflow: hidden;
-    transition: height 0.5s ease-out, padding 0.5s, margin 0.5s, border-width 0.5s;
+    /*transition: height 0.5s ease-out, padding 0.5s, margin 0.5s, border-width 0.5s;*/
+    transition:  all 0.5s;
     /*grid formating*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -62,11 +63,11 @@ REACH OUT MENU
     color: var(--tertiaryContainer);
 }
 
-div.reachOutCard h1{
+.reachOutCard h1{
     font-size: 60px;
 }
 
-div.reachOutCard p{
+.reachOutCard p{
     margin-top: auto;
     /*border setting*/
     padding-top: var(--tiny-pad);
@@ -122,17 +123,22 @@ UNIVERSITY DESCRIPTION
 SECTION HEADER
 ...........................................
 */
-div.uniDesc{
-    margin: 0;
-    padding: 0;
+
+/*gris settings*/
+.uniDesc{
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: var(--medium-pad);
-    text-align: left;
+    margin-bottom: var(--large-pad);
 }
 
-/*the picture and text over it*/
-div.TitlePic{
+/**
+TITLE PICTURE CLASS:
+the picture with the text over it
+*/
+
+/*pucture styling*/
+.titlePic{
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -140,16 +146,16 @@ div.TitlePic{
     overflow: hidden;
 }
 
-div.TitlePic img{
-    display: block;
+.titlePic img{
     max-width: 100%;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    margin: 0;
 }
 
-div.ImgTitle{
+/*title styling*/
+.imgTitle{
+    /*makes it fill all space*/
     display: flex;
     flex-direction: column;
     /**position*/
@@ -162,151 +168,117 @@ div.ImgTitle{
     /**text*/
     background: rgba(0, 0, 0, 0.6); 
     color: var(--onSurface);
-    text-align: left;
     /*border radius*/
     border-radius: 20px;
 }
 
-div.ImgTitle h1{
+.imgTitle h1{
+    /*makes sure there is enough space*/
     margin-left: var(--medium-pad);
     margin-right: var(--medium-pad);
-   font-size: 80px;
+    font-size: 60px;
 }
 
-div.ImgTitle h3{
+.imgTitle h3{
     font-size: 20px;
+    /*makes sure it is spaced out*/
     margin-bottom: var(--medium-pad);
     margin-left: var(--medium-pad);
     margin-right: var(--medium-pad);
     margin-top: auto;
 }
 
-/*text next to the picture*/
-div.uniDesc div h2{
-    font-size: 40px;
+/**
+...........................................
+COURSE CARD/WORK CARD
+they share a lot of similarities
+...........................................
+*/
+.workCard, .courseCard{
+    /*flex box settings*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*border properties*/
+    border-radius: 30px;
+    border-color: var(--onSurface);
+    border-width: 2px;
+    border-style: solid;
+    /*box properties*/
+    padding: var(--small-pad);
 }
 
-div.uniDesc div p{
-    font-size: 18px;
-    font-weight: bold;
+.courseCard div, .workCard div{
+    margin-top: auto;
 }
 
+.workCard h2, .courseCard h2{
+    font-size: 20px;
+}
+
+.workCard div.blob, .courseCard div.blob{
+    padding: var(--tiny-pad);
+}
 /**
 ...........................................
 COURSE CARD
 ...........................................
 */
-div#courseWork{
-    margin-top: var(--medium-pad);
-}
 
+/*grid settings*/
 .courseCards{
+    margin: var(--large-pad) 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: var(--medium-pad);
+    row-gap: var(--medium-pad);
     grid-template-rows: 1fr 1fr;
-
 }
 
 /**actual course card settings*/
-div.courseCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /*border properties*/
-    border-radius: 20px;
-    border-color: var(--onSurface);
-    border-width: 2px;
-    border-style: solid;
-    /*box properties*/
-    margin: var(--small-pad) auto;
-    padding: var(--small-pad);
-    max-width: 200px;
-    text-align: left;
-}
-
-div.courseCard div{
-    display: flex;
-    margin-top: auto;
-    flex-direction: row;
-}
-
-div.courseCard h2{
-    text-align: left;
-    margin: 0;
-}
-
-div.courseCard div.blob{
-    display: inline-block;
-    padding: 5px;
-    margin-right: 5px;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 20px;
+.courseCard div.blob{
     background-color: var(--onSurface);
     color: var(--surface);
-    align-self: flex-end;
 }
 
-div.courseCard h2{
-    font-size: 20px;
+/**
+...........................................
+WORK CARD SECTION
+...........................................
+*/
+
+/*header should not stick to row*/
+.workExperience h3{
+    margin-bottom: var(--large-pad);
 }
 
-/**WORK CARD SECTION*/
-#workExperience div.row{
-    margin-top: var(--small-pad);
+/*cards need to be at the start*/
+.workExperience div.row{
+    row-gap: var(--medium-pad);
     justify-content: flex-start;
 }
+
 /*make sure there is padding between spectrum and other cards*/
 #spectrum{
     margin: 0 var(--medium-pad)
 }
 
 /*the actual work card setting*/
-div.workCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /*border properties*/
-    border-radius: 20px;
-    border-color: var(--onSurface);
-    border-width: 2px;
-    border-style: solid;
-    /*box properties*/
-    padding: var(--small-pad);
-    max-width: 200px;
-    text-align: left;
+.workCard{
     /**color*/
     background-color: var(--onSurface);
     color: var(--surface);
+    /*width*/
+    max-width: 250px;
 }
 
-div.workCard h2{
-    text-align: left;
-    font-size: 20px;
-    margin: 0;
-}
-
-div.workCard ul{
+.workCard ul{
     margin: var(--small-pad) 0;
 }
 
-div.workCard div{
-    display: flex;
-    margin-top: auto;
-    flex-direction: row;
-}
-
-div.workCard div.blob{
-    display: inline-block;
-    padding: 5px;
-    margin-right: 5px;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 20px;
+.workCard div.blob{
     background-color: var(--surfaceDim);
     color: var(--onSurface);
-    align-self: flex-end;
 }
 
 /**
@@ -314,29 +286,22 @@ div.workCard div.blob{
 SCHOOL DESCRIPTION
 ===========================================
 */
-div.schoolDesc{
-    text-align: left;
+.schoolDesc{
     display: grid;
     grid-template-columns: 2fr 2fr;
+    column-gap: var(--medium-pad);
 }
 
-div.schoolDesc div img{
+.sch-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.schoolDesc div img{
     max-height: 500px;
 }
 
-div.schoolDesc div.desc{
-    padding-right: var(--small-pad);
-}
-
-div.schoolDesc div p{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-div.schoolDesc div.ImgTitle h1{
-    font-size: 60px;
-}
-
-div.schoolDesc div div.row{
+.schoolDesc div div.row{
+    margin-top: auto;
     justify-content: flex-start;
 }
