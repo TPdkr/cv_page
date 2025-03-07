@@ -48,6 +48,7 @@ ul{
 
 /*ground color*/
 body{
+    margin-top: 30px;
     color: var(--onSurface);
     background-color: var(--surface);
 }
@@ -58,15 +59,19 @@ NAVIGATION BAR
 ===========================================
 */
 div.navbar {
-    position: sticky;
-    top:5px;
-    margin: var(--small-pad);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*top:5px;
+    margin: var(--small-pad);*/
     padding: 7px;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     z-index: 3;
     /**colors*/
-    color: var(--onTertiaryContainer);
-    background-color: var(--tertiaryContainer);
+    color: var(--onSurface);
+    background-color: var(--surface);
+    border-bottom: 0px solid var(--onSurface);
     /**flex box settings*/
     display:flex;
     flex-direction: row;
@@ -76,7 +81,7 @@ div.navbar {
 }
 
 div.navbar a.text-button{
-    color: var(--onTertiaryContainer);
+    color: var(--onSurface);
 }
 
 div.title a.text-button{
