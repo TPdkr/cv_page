@@ -15,7 +15,7 @@ MAIN TITLE
 .profile_title{
     display: grid;
     grid-template-columns: 2fr 6fr;
-    column-gap: var(--medium-pad);
+    gap: var(--medium-pad);
     text-align: left;
 }
 
@@ -23,6 +23,25 @@ MAIN TITLE
     border-radius: 50%;
     min-width: 100px;
     width: 100%;
+}
+
+@media(max-width: 700px){
+    .profile_title{
+        grid-template-columns: 1fr;
+    }
+
+    .profile_title  img{
+        width: 50%;
+    }
+
+    .profile-pic{
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-text h1{
+        font-size: 50px;
+    }
 }
 
 /**
