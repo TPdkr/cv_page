@@ -31,7 +31,7 @@ REACH OUT MENU
 ===========================================
 */
 /**reach out button*/
-#reachOut{
+.reachOut{
     width: 200px;
 }
 
@@ -47,7 +47,7 @@ REACH OUT MENU
     /*grid formating*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: var(--medium-pad);
+    gap: var(--medium-pad);
 }
 
 /*cards with links to reach out to me*/
@@ -75,6 +75,28 @@ REACH OUT MENU
     border-top-width: 3px;
     border-color: currentColor;
     border-style: solid;
+}
+
+@media(max-width: 500px){
+    #reachOutMenu{
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .button-row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: var(--medium-pad);
+    }
+
+    .button-row a button{
+        width: 100%;
+    }
+
+    .reachOut{
+        order: 4;
+    }
 }
 
 /**
@@ -105,6 +127,13 @@ ABOUT ME HEADER CARD
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: var(--medium-pad);
+    row-gap: var(--medium-pad);
+}
+
+@media(max-width: 700px){
+    .aboutHeader{
+        grid-template-columns: 1fr;
+    }
 }
 
 /*list of languages and coding environments etc.*/
@@ -128,8 +157,18 @@ SECTION HEADER
 .uniDesc{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: var(--medium-pad);
+    gap: var(--medium-pad);
     margin-bottom: var(--large-pad);
+}
+
+.uni-text-desc p{
+    margin-left: 0;
+}
+
+@media(max-width: 1000px){
+    .uniDesc{
+        grid-template-columns: 1fr;
+    }
 }
 
 /**
@@ -235,6 +274,20 @@ COURSE CARD
     grid-template-rows: 1fr 1fr;
 }
 
+@media(max-width: 1000px){
+    .courseCards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 700px){
+    .courseCards{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 /**actual course card settings*/
 .courseCard div.blob{
     background-color: var(--onSurface);
@@ -289,12 +342,26 @@ SCHOOL DESCRIPTION
 .schoolDesc{
     display: grid;
     grid-template-columns: 2fr 2fr;
-    column-gap: var(--medium-pad);
+    gap: var(--medium-pad);
+}
+
+@media(max-width: 1000px){
+    .schoolDesc{
+        grid-template-columns: 1fr;
+    }
+
+    .school-pic{
+        order: -1;
+    }
 }
 
 .sch-desc{
     display: flex;
     flex-direction: column;
+}
+
+.sch-desc p{
+    margin-left: 0;
 }
 
 .schoolDesc div img{

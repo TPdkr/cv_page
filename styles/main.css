@@ -143,10 +143,17 @@ CARD BASE
     padding: var(--medium-pad);
     width: 90%;
     max-width: 1000px;
+    min-width: none;
     border-radius: 40px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
     /*content*/
     text-align: left;
+}
+
+@media(max-width: 500px){
+    .card-base{
+        width: 100%;
+    }
 }
 
 /*this is a specific card that is filled with color*/
