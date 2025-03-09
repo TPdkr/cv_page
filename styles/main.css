@@ -152,7 +152,7 @@ CARD BASE
 
 @media(max-width: 700px){
     .card-base{
-        width: 100%;
+        width: auto;
     }
 }
 
