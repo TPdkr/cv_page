@@ -326,13 +326,8 @@ WORK CARD SECTION
 
 /*cards need to be at the start*/
 .workExperience div.row{
-    row-gap: var(--medium-pad);
+    gap: var(--medium-pad);
     justify-content: flex-start;
-}
-
-/*make sure there is padding between spectrum and other cards*/
-#spectrum{
-    margin: 0 var(--medium-pad)
 }
 
 /*the actual work card setting*/
