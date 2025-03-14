@@ -35,6 +35,37 @@ div.row.features{
 
 /**
 ===========================================
+NEW PROJECTS TITLE CARD
+===========================================
+*/
+.project-title{
+    position: relative;
+    margin: var(--large-pad);
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: var(--large-radius);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+.project-title img{
+    width: 100%;
+    align-self: center;
+}
+
+.project-title-text{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: var(--large-radius);
+    padding: var(--large-pad);
+}
+
+.project-title-text h1{
+    font-size: 8vh;
+}
+
+/**
+===========================================
 GENAU
 ===========================================
 */

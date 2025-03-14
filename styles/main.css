@@ -31,6 +31,10 @@ ROOT
     --small-pad: 10px;
     --medium-pad: 20px;
     --large-pad: 30px;
+
+    /*radius sizes*/
+    --medium-radius: 20px;
+    --large-radius: 30px;
 }
 
 /*set the default state*/
