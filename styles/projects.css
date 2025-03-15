@@ -91,7 +91,7 @@ NEW PROJECTS TITLE CARD
 }
 
 .preview-overlay{
-    display: flex;
+    display: grid;
     position: absolute;
     inset: 0;
     padding: var(--medium-pad);
@@ -104,6 +104,7 @@ NEW PROJECTS TITLE CARD
     border-radius: 50%;
     height: 75px;
     width: 75px;
+    font-size: 50px;
 }
 
 .project-card-preview img{
@@ -112,6 +113,10 @@ NEW PROJECTS TITLE CARD
     aspect-ratio: 1 / 1; /* Keeps it square */
     object-fit: cover;
     border-radius: var(--medium-radius);
+}
+
+.project-card-tags{
+    margin-top: var(--medium-pad);
 }
 /**
 ===========================================
