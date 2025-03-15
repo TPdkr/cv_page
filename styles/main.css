@@ -35,6 +35,7 @@ ROOT
     --small-pad: 10px;
     --medium-pad: 20px;
     --large-pad: 30px;
+    --giant-pad: 60px;
 
     /*radius sizes*/
     --medium-radius: 20px;
@@ -59,7 +60,7 @@ ul{
 
 /*ground color*/
 body{
-    margin-top: 30px;
+    margin-top: 40px;
     color: var(--onSurface);
     background-color: var(--surface);
 }

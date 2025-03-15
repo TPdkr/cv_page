@@ -68,6 +68,7 @@ NEW PROJECTS TITLE CARD
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: var(--large-pad) var(--large-pad);
+    gap: var(--medium-pad);
 }
 
 .project-card{
