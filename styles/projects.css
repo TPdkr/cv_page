@@ -138,16 +138,24 @@ PROJECT LINK CARD
 }
 
 .preview-overlay{
-    display: grid;
     position: absolute;
     inset: 0;
-    padding: var(--medium-pad);
+}
+
+.project-card-preview div.active{
+    position: absolute;
+    right: var(--small-pad);
+    top: var(--small-pad);
+    padding: var(--small-pad);
+    background-color: var(--active);
+    border-radius: 50vh;
+
 }
 
 .project-card-preview div.filled-button{
     position: absolute;
-    align-self: flex-end;
-    justify-self: flex-end;
+    right:-5px;
+    bottom: -5px;
     border-radius: 50%;
     height: 75px;
     width: 75px;
@@ -156,7 +164,6 @@ PROJECT LINK CARD
 
 .project-card-preview img{
     max-height: 400px;
-    max-width: 400px;
     aspect-ratio: 3 / 2; /* Keeps it square */
     object-fit: cover;
     width: 100%;
