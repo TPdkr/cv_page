@@ -35,7 +35,7 @@ ROOT
     --small-pad: 10px;
     --medium-pad: 20px;
     --large-pad: 30px;
-    --giant-pad: 60px;
+    --giant-pad: 100px;
 
     /*radius sizes*/
     --medium-radius: 20px;
@@ -330,6 +330,7 @@ FILLED
     /*background color*/
     background-color: var(--primary);
     color: var(--onPrimary);
+    border-style: none;
 }
 
 .filled-button:hover{
@@ -369,4 +370,9 @@ this is a text button like the ones in the navbar
 .secondary{
     color: var(--onSecondary);
     background-color: var(--secondary);
+}
+
+.primary{
+    color: var(--onPrimary);
+    background-color: var(--primary);
 }
