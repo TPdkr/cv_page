@@ -58,6 +58,10 @@ NEW PROJECTS TITLE CARD
     background: rgba(0, 0, 0, 0.6);
     border-radius: var(--large-radius);
     padding: var(--large-pad);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-title-text h1{
@@ -114,7 +118,7 @@ SKILL GRID
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: var(--medium-pad);
+    gap: var(--large-pad);
 }
 
 .skill-card{
@@ -158,10 +162,15 @@ PROJECT LINK CARD
     box-shadow: var(--shadow);
 }
 
-.project-card-preview{  
+.project-card-preview{ 
     position: relative;
-
 }
+
+/*#genau-card{
+    background-color: var(--onSurface);
+    border-radius: var(--medium-radius);
+    aspect-ratio: 3 / 2;
+}*/
 
 .preview-overlay{
     position: absolute;
@@ -190,10 +199,11 @@ PROJECT LINK CARD
 
 .project-card-preview img{
     max-height: 400px;
-    aspect-ratio: 3 / 2; /* Keeps it square */
+    aspect-ratio: 3 / 2;
     object-fit: cover;
     width: 100%;
     border-radius: var(--medium-radius);
+    
 }
 
 .project-card-tags{
