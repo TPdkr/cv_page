@@ -64,6 +64,55 @@ NEW PROJECTS TITLE CARD
     font-size: 8vh;
 }
 
+.projects-links-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: var(--large-pad) var(--large-pad);
+}
+
+.project-card{
+    max-width: 1000px;
+    border-radius: var(--large-radius);
+    padding: var(--medium-pad);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--medium-pad);
+    transition: all 0.3s;
+}
+
+.project-card:hover{
+    scale: 1.02;
+    box-shadow: var(--shadow);
+}
+
+.project-card-preview{  
+    position: relative;
+
+}
+
+.preview-overlay{
+    display: flex;
+    position: absolute;
+    inset: 0;
+    padding: var(--medium-pad);
+}
+
+.project-card-preview div.filled-button{
+    position: absolute;
+    align-self: flex-end;
+    justify-self: flex-end;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+}
+
+.project-card-preview img{
+    max-height: 400px;
+    max-width: 400px;
+    aspect-ratio: 1 / 1; /* Keeps it square */
+    object-fit: cover;
+    border-radius: var(--medium-radius);
+}
 /**
 ===========================================
 GENAU

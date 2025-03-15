@@ -24,6 +24,10 @@ ROOT
     --onPrimary: #36275d;
     --tertiaryContainer: #633b48;
     --onTertiaryContainer: #ffd9e3;
+    --tertiary:#efb8c8;
+    --onTertiary: #4a2532;
+    --secondary: #cbc2db;
+    --onSecondary: #332d41;
     --invSurvace:#2c2a31;
 
     /*website padding values**/
@@ -35,11 +39,14 @@ ROOT
     /*radius sizes*/
     --medium-radius: 20px;
     --large-radius: 30px;
+
+    /*shadow*/
+    --shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
 }
 
 /*set the default state*/
 *{
-    font-family: Arial;
+    font-family: Helvetica;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -273,6 +280,9 @@ This section contains 3 main button types used on this website
 
 /*common properties:*/
 button, .filled-button, .outlined-button, .text-button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -342,4 +352,20 @@ this is a text button like the ones in the navbar
 
 .text-button:active{
     opacity: 0.5;
+}
+
+/*color pallete classes*/
+.tertiary-container{
+    color: var(--onTertiaryContainer);
+    background-color: var(--te);
+}
+
+.tertiary{
+    color: var(--onTertiary);
+    background-color: var(--tertiary);
+}
+
+.secondary{
+    color: var(--onSecondary);
+    background-color: var(--secondary);
 }
