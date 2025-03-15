@@ -158,6 +158,7 @@ ABOUT ME HEADER CARD
 /*list of languages and coding environments etc.*/
 .skills{
     justify-content: flex-start;
+    gap: var(--small-pad);
 }
 
 /**
@@ -385,4 +386,5 @@ SCHOOL DESCRIPTION
 .schoolDesc div div.row{
     margin-top: auto;
     justify-content: flex-start;
+    gap: var(--small-pad);
 }
