@@ -107,6 +107,32 @@ PAGE DESCRIPTION
 
 /*
 ===========================================
+SKILL GRID
+===========================================
+*/
+.page-desciption div.skill-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--medium-pad);
+}
+
+.skill-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--large-radius);
+    padding: var(--large-pad);
+}
+
+.skill-card h1.skill-icon i{
+    position: absolute;
+    font-size: 200px;
+    right: -20px;
+    bottom: -50px;
+}
+
+/*
+===========================================
 PROJECT LINK CARD
 ===========================================
 */
@@ -154,8 +180,8 @@ PROJECT LINK CARD
 
 .project-card-preview div.filled-button{
     position: absolute;
-    right:-5px;
-    bottom: -5px;
+    right:-10px;
+    bottom: -10px;
     border-radius: 50%;
     height: 75px;
     width: 75px;
