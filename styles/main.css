@@ -127,6 +127,7 @@ BLOBS
 .blob-outlined{
     color: var(--onSurface);
     border-color: var(--onSurface);
+    background-color: var(--surface);
     border-width: 2px;
     border-style: solid;
 }

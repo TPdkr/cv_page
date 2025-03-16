@@ -26,9 +26,6 @@ function putNavbar(){
         <a href="index.html#main_title" class="text-button">
             <h2>about me</h2>
         </a>
-        <a class="text-button">
-            <h2>the website</h2>
-        </a>
         `;
     } else {
         console.log("navbar not found on page");

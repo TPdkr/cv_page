@@ -41,7 +41,7 @@ NEW PROJECTS TITLE CARD
 .project-title{
     position: relative;
     margin: var(--large-pad);
-    max-height: 400px;
+    max-height: 30rem;
     overflow: hidden;
     border-radius: var(--large-radius);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
@@ -65,7 +65,7 @@ NEW PROJECTS TITLE CARD
 }
 
 .project-title-text h1{
-    font-size: 8vh;
+    font-size: 5rem;
 }
 /*
 ===========================================
@@ -90,10 +90,22 @@ PAGE DESCRIPTION
     }
 }
 
+.paragraph p{
+    font-size: 1.2rem;
+}
+/*
+-------------------------------------------
+This is the left most card
+-------------------------------------------
+*/
 .page-desciption-grid div.text{
     display: flex;
     flex-direction: column;
     gap: var(--medium-pad);
+    border-radius: var(--large-radius); 
+    padding: var(--large-pad);
+    background-color: #ffd9e3;
+    color: #633b48;
 }
 
 .blob-row{
@@ -104,7 +116,11 @@ PAGE DESCRIPTION
 }
 
 .blob-row div.blob, .blob-row div.blob-outlined{
-    font-size: 30px;
+    font-size: 2rem;
+}
+
+.blob-row div.blob-outlined{
+    border-width: 0px;
 }
 
 .page-desciption-grid div.picture {
@@ -124,9 +140,9 @@ PAGE DESCRIPTION
 }
 
 /*
-===========================================
+-------------------------------------------
 SKILL GRID
-===========================================
+-------------------------------------------
 */
 .page-desciption-grid div.skill-grid{
     display: grid;
@@ -145,7 +161,7 @@ SKILL GRID
 
 .skill-card h1.skill-icon i{
     position: absolute;
-    font-size: 200px;
+    font-size: 13rem;
     right: -20px;
     bottom: -50px;
 }
@@ -162,6 +178,17 @@ PROJECT LINK CARD
     gap: var(--medium-pad);
 }
 
+@media(max-width: 1000px){
+    .projects-links-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 700px){
+    .projects-links-grid{
+        grid-template-columns: 1fr;
+    }
+}
 .project-card{
     max-width: 1000px;
     border-radius: var(--large-radius);
