@@ -72,14 +72,25 @@ NEW PROJECTS TITLE CARD
 PAGE DESCRIPTION
 ===========================================
 */
+
 .page-desciption{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     margin: var(--giant-pad) var(--large-pad);
     gap: var(--large-pad);
 }
+.page-desciption-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--large-pad);
+}
 
-.page-desciption div.text{
+@media(max-width: 1000px){
+    .page-desciption-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.page-desciption-grid div.text{
     display: flex;
     flex-direction: column;
     gap: var(--medium-pad);
@@ -89,11 +100,14 @@ PAGE DESCRIPTION
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: var(--tiny-pad);
-    margin-top: auto;
+    gap: var(--small-pad);    
 }
 
-.page-desciption div.picture {
+.blob-row div.blob, .blob-row div.blob-outlined{
+    font-size: 30px;
+}
+
+.page-desciption-grid div.picture {
     display: flex;
     justify-content: center; /* Centers the image */
     align-items: center; /* Centers vertically */
@@ -102,7 +116,7 @@ PAGE DESCRIPTION
     overflow: hidden; /* Hides overflow */
 }
 
-.page-desciption div.picture img {
+.page-desciption-grid div.picture img {
     width: 100%;
     height: 100%; 
     object-fit: cover;
@@ -114,7 +128,7 @@ PAGE DESCRIPTION
 SKILL GRID
 ===========================================
 */
-.page-desciption div.skill-grid{
+.page-desciption-grid div.skill-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -126,6 +140,7 @@ SKILL GRID
     overflow: hidden;
     border-radius: var(--large-radius);
     padding: var(--large-pad);
+    min-height: 200px;
 }
 
 .skill-card h1.skill-icon i{

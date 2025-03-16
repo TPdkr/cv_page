@@ -378,3 +378,9 @@ this is a text button like the ones in the navbar
     color: var(--onPrimary);
     background-color: var(--primary);
 }
+
+.primary-container{
+    color: var(--onPrimaryContainer);
+    background-color: var(--primaryContainer);
+    border-color: var(--onPrimaryContainer);
+}
