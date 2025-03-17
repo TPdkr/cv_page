@@ -104,8 +104,8 @@ This is the left most card
     gap: var(--medium-pad);
     border-radius: var(--large-radius); 
     padding: var(--large-pad);
-    background-color: var(  --tertiaryContainerInv);
-    color: var(--onTertiaryContainerInv);
+    background-color: var(--tertiaryContainer);
+    color: var(--onTertiaryContainer);
 }
 
 .blob-row{

@@ -22,10 +22,25 @@ ROOT
     --onPrimaryContainer:#e9ddff;
     --primary: #cfbdfe;
     --onPrimary: #36275d;
+    /*#B7EEE2*/
+    --tertiaryContainer:#334b46;
+    --onTertiaryContainer: #cde8e1;
+    --tertiary:#b1ccc5;
+    --onTertiary: #1c3530;
+    /*DEFAULT*/
+    /*
     --tertiaryContainer: #633b48;
     --onTertiaryContainer: #ffd9e3;
     --tertiary:#efb8c8;
     --onTertiary: #4a2532;
+    */
+    /*#B7C4EE*/
+    /*
+    --tertiaryContainer: #304578;
+    --onTertiaryContainer: #dae2ff;
+    --tertiary:#b2c5ff;
+    --onTertiary: #182e60;
+    */
     --tertiaryContainerInv: #ffd9e3;
     --onTertiaryContainerInv: #633b48;
     --secondary: #cbc2db;
@@ -386,4 +401,9 @@ this is a text button like the ones in the navbar
     color: var(--onPrimaryContainer);
     background-color: var(--primaryContainer);
     border-color: var(--onPrimaryContainer);
+}
+
+.onSurface{
+    color: var(--surface);
+    background-color: var(--onSurface);
 }
