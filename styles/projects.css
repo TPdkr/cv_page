@@ -197,6 +197,7 @@ PROJECT LINK CARD
     grid-template-columns: 1fr;
     gap: var(--medium-pad);
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .project-card:hover{
