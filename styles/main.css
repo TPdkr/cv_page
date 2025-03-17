@@ -26,6 +26,8 @@ ROOT
     --onTertiaryContainer: #ffd9e3;
     --tertiary:#efb8c8;
     --onTertiary: #4a2532;
+    --tertiaryContainerInv: #ffd9e3;
+    --onTertiaryContainerInv: #633b48;
     --secondary: #cbc2db;
     --onSecondary: #332d41;
     --invSurvace:#2c2a31;

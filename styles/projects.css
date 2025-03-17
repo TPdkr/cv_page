@@ -104,8 +104,8 @@ This is the left most card
     gap: var(--medium-pad);
     border-radius: var(--large-radius); 
     padding: var(--large-pad);
-    background-color: #ffd9e3;
-    color: #633b48;
+    background-color: var(  --tertiaryContainerInv);
+    color: var(--onTertiaryContainerInv);
 }
 
 .blob-row{
@@ -208,12 +208,6 @@ PROJECT LINK CARD
 .project-card-preview{ 
     position: relative;
 }
-
-/*#genau-card{
-    background-color: var(--onSurface);
-    border-radius: var(--medium-radius);
-    aspect-ratio: 3 / 2;
-}*/
 
 .preview-overlay{
     position: absolute;
