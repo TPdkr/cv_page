@@ -48,14 +48,14 @@ NEW PROJECTS TITLE CARD
 }
 
 .project-title img{
-    width: 100%;
+    width: 102%;
     align-self: center;
 }
 
 .project-title-text{
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+    /*background: rgba(0, 0, 0, 0.6);*/
     border-radius: var(--large-radius);
     padding: var(--large-pad);
     display: flex;
