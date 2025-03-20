@@ -84,7 +84,7 @@ PAGE DESCRIPTION
     gap: var(--large-pad);
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1100px){
     .page-desciption-grid{
         grid-template-columns: 1fr;
     }
@@ -117,6 +117,12 @@ This is the left most card
 
 .blob-row div.blob, .blob-row div.blob-outlined{
     font-size: 2rem;
+}
+
+@media(max-width: 1700px){
+    .blob-row div.blob, .blob-row div.blob-outlined{
+        font-size: 1.5rem;
+    }
 }
 
 .blob-row div.blob-outlined{
@@ -244,6 +250,9 @@ PROJECT LINK CARD
 }
 
 .project-card-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--small-pad);
     margin-top: var(--medium-pad);
 }
 /**
