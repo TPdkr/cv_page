@@ -35,6 +35,228 @@ div.row.features{
 
 /**
 ===========================================
+NEW PROJECTS TITLE CARD
+===========================================
+*/
+.project-title{
+    position: relative;
+    margin: var(--large-pad);
+    max-height: 30rem;
+    overflow: hidden;
+    border-radius: var(--large-radius);
+    /*box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);*/
+}
+
+.project-title img{
+    width: 102%;
+    align-self: center;
+}
+
+.project-title-text{
+    position: absolute;
+    inset: 0;
+    /*background: rgba(0, 0, 0, 0.6);*/
+    border-radius: var(--large-radius);
+    padding: var(--large-pad);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-title-text h1{
+    font-size: 5rem;
+}
+/*
+===========================================
+PAGE DESCRIPTION
+===========================================
+*/
+
+.page-desciption{
+    display: grid;
+    margin: var(--giant-pad) var(--large-pad);
+    gap: var(--large-pad);
+}
+.page-desciption-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--large-pad);
+}
+
+@media(max-width: 1100px){
+    .page-desciption-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.paragraph p{
+    font-size: 1.2rem;
+}
+/*
+-------------------------------------------
+This is the left most card
+-------------------------------------------
+*/
+.page-desciption-grid div.text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-pad);
+    border-radius: var(--large-radius); 
+    padding: var(--large-pad);
+    background-color: var(--tertiaryContainer);
+    color: var(--onTertiaryContainer);
+}
+
+.blob-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: var(--small-pad);    
+}
+
+.blob-row div.blob, .blob-row div.blob-outlined{
+    font-size: 2rem;
+}
+
+@media(max-width: 1700px){
+    .blob-row div.blob, .blob-row div.blob-outlined{
+        font-size: 1.5rem;
+    }
+}
+
+.blob-row div.blob-outlined{
+    border-width: 0px;
+}
+
+.page-desciption-grid div.picture {
+    display: flex;
+    justify-content: center; /* Centers the image */
+    align-items: center; /* Centers vertically */
+    width: 100%; /* Make sure it takes full width of the grid column */
+    max-height: 600px; /* Prevents it from being too tall */
+    overflow: hidden; /* Hides overflow */
+}
+
+.page-desciption-grid div.picture img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: var(--large-radius); 
+}
+
+/*
+-------------------------------------------
+SKILL GRID
+-------------------------------------------
+*/
+.page-desciption-grid div.skill-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--large-pad);
+}
+
+.skill-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--large-radius);
+    padding: var(--large-pad);
+    min-height: 200px;
+}
+
+.skill-card h1.skill-icon i{
+    position: absolute;
+    font-size: 13rem;
+    right: -20px;
+    bottom: -50px;
+}
+
+/*
+===========================================
+PROJECT LINK CARD
+===========================================
+*/
+.projects-links-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: var(--large-pad) var(--large-pad);
+    gap: var(--medium-pad);
+}
+
+@media(max-width: 1000px){
+    .projects-links-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 700px){
+    .projects-links-grid{
+        grid-template-columns: 1fr;
+    }
+}
+.project-card{
+    max-width: 1000px;
+    border-radius: var(--large-radius);
+    padding: var(--medium-pad);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--medium-pad);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.project-card:hover{
+    scale: 1.02;
+    box-shadow: var(--shadow);
+}
+
+.project-card-preview{ 
+    position: relative;
+}
+
+.preview-overlay{
+    position: absolute;
+    inset: 0;
+}
+
+.project-card-preview div.active{
+    position: absolute;
+    right: var(--small-pad);
+    top: var(--small-pad);
+    padding: var(--small-pad);
+    background-color: var(--active);
+    border-radius: 50vh;
+
+}
+
+.project-card-preview div.filled-button{
+    position: absolute;
+    right:-10px;
+    bottom: -10px;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    font-size: 50px;
+}
+
+.project-card-preview img{
+    max-height: 400px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    width: 100%;
+    border-radius: var(--medium-radius);
+    
+}
+
+.project-card-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--small-pad);
+    margin-top: var(--medium-pad);
+}
+/**
+===========================================
 GENAU
 ===========================================
 */

@@ -22,20 +22,51 @@ ROOT
     --onPrimaryContainer:#e9ddff;
     --primary: #cfbdfe;
     --onPrimary: #36275d;
+    /*#B7EEE2*/
+    --tertiaryContainer:#334b46;
+    --onTertiaryContainer: #cde8e1;
+    --tertiary:#b1ccc5;
+    --onTertiary: #1c3530;
+    /*DEFAULT*/
+    /*
     --tertiaryContainer: #633b48;
     --onTertiaryContainer: #ffd9e3;
+    --tertiary:#efb8c8;
+    --onTertiary: #4a2532;
+    */
+    /*#B7C4EE*/
+    /*
+    --tertiaryContainer: #304578;
+    --onTertiaryContainer: #dae2ff;
+    --tertiary:#b2c5ff;
+    --onTertiary: #182e60;
+    */
+    --tertiaryContainerInv: #ffd9e3;
+    --onTertiaryContainerInv: #633b48;
+    --secondary: #cbc2db;
+    --onSecondary: #332d41;
     --invSurvace:#2c2a31;
+
+    --active: #92d892;
 
     /*website padding values**/
     --tiny-pad: 5px;
     --small-pad: 10px;
     --medium-pad: 20px;
     --large-pad: 30px;
+    --giant-pad: 150px;
+
+    /*radius sizes*/
+    --medium-radius: 20px;
+    --large-radius: 30px;
+
+    /*shadow*/
+    --shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
 }
 
 /*set the default state*/
 *{
-    font-family: Arial;
+    font-family: Helvetica;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -48,7 +79,7 @@ ul{
 
 /*ground color*/
 body{
-    margin-top: 30px;
+    margin-top: 50px;
     color: var(--onSurface);
     background-color: var(--surface);
 }
@@ -100,10 +131,9 @@ BLOBS
 .blob , .blob-outlined{
     display: inline-block;
     padding: 10px;
-    margin: 5px;
     font-weight: bold;
     font-size: 15px;
-    border-radius: 20px;
+    border-radius: 50vh;
 }
 
 .blob{
@@ -114,6 +144,7 @@ BLOBS
 .blob-outlined{
     color: var(--onSurface);
     border-color: var(--onSurface);
+    background-color: var(--surface);
     border-width: 2px;
     border-style: solid;
 }
@@ -194,7 +225,6 @@ CARD BASE
 .card p{
     margin: 0 auto;
     padding: 10px 0;
-    max-width: 600px;
 }
 
 .card img{
@@ -269,6 +299,10 @@ This section contains 3 main button types used on this website
 
 /*common properties:*/
 button, .filled-button, .outlined-button, .text-button {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -278,9 +312,7 @@ button, .filled-button, .outlined-button, .text-button {
     padding: var(--small-pad);
     /**border related properties*/
     border-radius: 30px;
-    border-color: var(--primary);
-    border-width: 2px;
-    border-style: solid;
+    
 }
 
 /**
@@ -292,6 +324,9 @@ OUTLINED
     /**font and background*/
     background-color: var(--onPrimary);
     color: var(--primary);
+    border-width: 2px;
+    border-color: var(--primary);
+    border-style: solid;
 }
 
 .outlined-button:hover{
@@ -315,6 +350,7 @@ FILLED
     /*background color*/
     background-color: var(--primary);
     color: var(--onPrimary);
+    border-style: none;
 }
 
 .filled-button:hover{
@@ -338,4 +374,36 @@ this is a text button like the ones in the navbar
 
 .text-button:active{
     opacity: 0.5;
+}
+
+/*color pallete classes*/
+.tertiary-container{
+    color: var(--onTertiaryContainer);
+    background-color: var(--te);
+}
+
+.tertiary{
+    color: var(--onTertiary);
+    background-color: var(--tertiary);
+}
+
+.secondary{
+    color: var(--onSecondary);
+    background-color: var(--secondary);
+}
+
+.primary{
+    color: var(--onPrimary);
+    background-color: var(--primary);
+}
+
+.primary-container{
+    color: var(--onPrimaryContainer);
+    background-color: var(--primaryContainer);
+    border-color: var(--onPrimaryContainer);
+}
+
+.onSurface{
+    color: var(--surface);
+    background-color: var(--onSurface);
 }
