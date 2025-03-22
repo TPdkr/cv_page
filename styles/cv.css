@@ -1,0 +1,17 @@
+/**
+===========================================
+CV PAGE
+===========================================
+*/
+.projectDesc{
+    margin: var(--large-pad) 0;
+    text-align: left;
+}
+
+div.projectDesc h1, div.projectDesc p{
+    margin: 0;
+}
+
+#toGitHub{
+    display: block;
+}

@@ -1,0 +1,152 @@
+/**
+===========================================
+GENAU
+===========================================
+*/
+
+/*TEXT BLOCK the text description*/
+.genauDescText{
+    /*grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--medium-pad);
+    /*margins*/
+    margin-top: var(--medium-pad);
+}
+
+.genauDescText div.desc{
+    padding: var(--medium-pad);
+    /*border*/
+    border-radius: 20px;
+    border-color: var(--onSurface);
+    border-width: 2px;
+    border-style: solid;
+}
+
+/**
+-------------------------------------------
+IMAGE GALLERY OF APP
+-------------------------------------------
+*/
+.genauGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: var(--medium-pad);
+    align-items: start;
+}
+
+.genauGallery img{
+    width: 100%;
+    height: auto;
+}
+
+.genauSubGallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: var(--medium-pad);
+    height: 100%;
+}
+
+.genauSubGallery div.island{
+    flex: 1;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ensure images inside islands don't affect height */
+.genauSubGallery div.island img {
+    object-fit: contain; 
+}
+
+/**
+-------------------------------------------
+ANDROID ICON CARD
+-------------------------------------------
+*/
+.androidIcon.island{
+    /*color*/
+    background-color: var(--onTertiaryContainer);
+    color: var(--tertiaryContainer);
+}
+
+.androidIcon.island div{
+    margin-top: auto;
+}
+
+.androidIcon.island div p{
+    padding: 0;
+}
+
+/**
+-------------------------------------------
+APP NAME CARD
+-------------------------------------------
+*/
+.app-name.island{
+    /*colors*/
+    background-color: var(--onSurface);
+    color: var(--surface);
+}
+
+.app-name.island div{
+    margin-top: auto;
+}
+
+.app-name.island div p{
+    padding: 0;
+}
+
+/**
+-------------------------------------------
+CLOSE UP CARD
+-------------------------------------------
+*/
+.app-crop.island{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+div.app-crop.island img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cropTitle{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); 
+    /*box*/
+    border-radius: 20px;
+    padding: var(--medium-pad);
+    /*flex settings*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+div.cropTitle p{
+    margin: 0;
+    padding: 0;
+}
+
+/**
+-------------------------------------------
+BUTTON ROW
+-------------------------------------------
+*/
+.buttonRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--medium-pad);
+    height: auto;
+}
+
+/*github page button and download button*/
+#gitGenau, #downloadGenau{
+    padding: var(--medium-pad);
+    height: 100px;
+}
