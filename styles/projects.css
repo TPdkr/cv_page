@@ -50,7 +50,7 @@ div.row.features{
 
 @media(max-width: 1000px){
     .blob, .blob-outlined{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 }
 

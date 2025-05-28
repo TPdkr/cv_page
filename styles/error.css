@@ -1,0 +1,10 @@
+
+body {
+  background-image: url('/pictures/defaults/Crypto\ Coding\ GIF.gif'); /* Replace with your image path */
+  background-repeat: repeat; /* This is the default; you can omit it */
+}
+
+.error-message{
+    padding: var(--large-pad);
+    background-color: var(--shadowColor);
+}
