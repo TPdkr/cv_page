@@ -62,6 +62,7 @@ ROOT
 
     /*shadow*/
     --shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+    --shadowColor: rgba(0, 0, 0, 0.6);
 }
 
 /*set the default state*/

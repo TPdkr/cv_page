@@ -12,6 +12,17 @@ GENERAL
 ===========================================
 */
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
 /**the title part*/
 .projectTitle h1{
     font-size: 60px;
@@ -31,6 +42,16 @@ div.row.features{
 /*mid title section*/
 .projectMidTitle h2{
     margin: var(--large-pad) 0;
+}
+
+.blob, .blob-outlined{
+    font-size: 1rem;
+}
+
+@media(max-width: 1000px){
+    .blob, .blob-outlined{
+        font-size: 1.2rem;
+    }
 }
 
 /**
@@ -67,6 +88,10 @@ NEW PROJECTS TITLE CARD
 .project-title-text h1{
     font-size: 5rem;
 }
+
+.project-title-text h3{
+    text-align: center;
+}
 /*
 ===========================================
 PAGE DESCRIPTION
@@ -84,7 +109,7 @@ PAGE DESCRIPTION
     gap: var(--large-pad);
 }
 
-@media(max-width: 1100px){
+@media(max-width: 1200px){
     .page-desciption-grid{
         grid-template-columns: 1fr;
     }
@@ -116,12 +141,12 @@ This is the left most card
 }
 
 .blob-row div.blob, .blob-row div.blob-outlined{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-@media(max-width: 1700px){
+@media(max-width: 1200px){
     .blob-row div.blob, .blob-row div.blob-outlined{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -163,6 +188,22 @@ SKILL GRID
     border-radius: var(--large-radius);
     padding: var(--large-pad);
     min-height: 200px;
+}
+
+.skill-card h3{
+    text-wrap: wrap;
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+    .skill-card h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .skill-card h3{
+        font-size: 1rem;
+    }
 }
 
 .skill-card h1.skill-icon i{
@@ -254,183 +295,4 @@ PROJECT LINK CARD
     flex-wrap: wrap;
     gap: var(--small-pad);
     margin-top: var(--medium-pad);
-}
-/**
-===========================================
-GENAU
-===========================================
-*/
-
-/*TEXT BLOCK the text description*/
-.genauDescText{
-    /*grid*/
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: var(--medium-pad);
-    /*margins*/
-    margin-top: var(--medium-pad);
-}
-
-.genauDescText div.desc{
-    padding: var(--medium-pad);
-    /*border*/
-    border-radius: 20px;
-    border-color: var(--onSurface);
-    border-width: 2px;
-    border-style: solid;
-}
-
-/**
--------------------------------------------
-IMAGE GALLERY OF APP
--------------------------------------------
-*/
-.genauGallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: var(--medium-pad);
-    align-items: start;
-}
-
-.genauGallery img{
-    width: 100%;
-    height: auto;
-}
-
-.genauSubGallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: var(--medium-pad);
-    height: 100%;
-}
-
-.genauSubGallery div.island{
-    flex: 1;
-    display: flex;    
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Ensure images inside islands don't affect height */
-.genauSubGallery div.island img {
-    object-fit: contain; 
-}
-
-/**
--------------------------------------------
-ANDROID ICON CARD
--------------------------------------------
-*/
-.androidIcon.island{
-    /*color*/
-    background-color: var(--onTertiaryContainer);
-    color: var(--tertiaryContainer);
-}
-
-.androidIcon.island div{
-    margin-top: auto;
-}
-
-.androidIcon.island div p{
-    padding: 0;
-}
-
-/**
--------------------------------------------
-APP NAME CARD
--------------------------------------------
-*/
-.app-name.island{
-    /*colors*/
-    background-color: var(--onSurface);
-    color: var(--surface);
-}
-
-.app-name.island div{
-    margin-top: auto;
-}
-
-.app-name.island div p{
-    padding: 0;
-}
-
-/**
--------------------------------------------
-CLOSE UP CARD
--------------------------------------------
-*/
-.app-crop.island{
-    position: relative;
-    overflow: hidden;
-    padding: 0;
-}
-
-div.app-crop.island img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.cropTitle{
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6); 
-    /*box*/
-    border-radius: 20px;
-    padding: var(--medium-pad);
-    /*flex settings*/
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-div.cropTitle p{
-    margin: 0;
-    padding: 0;
-}
-
-/**
--------------------------------------------
-BUTTON ROW
--------------------------------------------
-*/
-.buttonRow{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: var(--medium-pad);
-    height: auto;
-}
-
-/*github page button and download button*/
-#gitGenau, #downloadGenau{
-    padding: var(--medium-pad);
-    height: 100px;
-}
-
-/**
-===========================================
-CV PAGE
-===========================================
-*/
-.projectDesc{
-    margin: var(--large-pad) 0;
-    text-align: left;
-}
-
-div.projectDesc h1, div.projectDesc p{
-    margin: 0;
-}
-
-#toGitHub{
-    display: block;
-}
-
-/**
-===========================================
-WEBSITE
-===========================================
-*/
-.website_pic{
-    height: 400px;
 }

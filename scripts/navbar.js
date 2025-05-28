@@ -15,16 +15,16 @@ function putNavbar(){
     if (navbarEl){
         navbarEl.innerHTML = `
         <a href="projects.html" class="text-button">
-            <h2 >projects</h2>
+            <div>projects</div>
         </a>
         <a href="index.html#edu_title" class="text-button">
-            <h2>education</h2>
+            <div>education</div>
         </a>
         <a href="index.html" class="text-button">
-            <h2>home</h2>
+            <div>home</div>
         </a>
         <a href="index.html#main_title" class="text-button">
-            <h2>about me</h2>
+            <div>about me</div>
         </a>
         `;
     } else {
