@@ -1,19 +1,9 @@
-/*hide navbar on scroll**/
-//var prevScrollpos = window.pageYOffset;
-/*window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.querySelector(".navbar").style.top = "0px";
-    } else {
-        document.querySelector(".navbar").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-}*/
-
 function putNavbar(){
     let navbarEl = document.querySelector(".navbar");
     if (navbarEl){
         navbarEl.innerHTML = `
+        <h2>TPdkrt</h2>
+        <div class="navbar-links">
         <a href="projects.html" class="text-button">
             <div>projects</div>
         </a>
@@ -26,10 +16,42 @@ function putNavbar(){
         <a href="index.html#main_title" class="text-button">
             <div>about me</div>
         </a>
+        </div>
         `;
     } else {
         console.log("navbar not found on page");
     }
 }
+
+async function checkCountry(){
+    return fetch('https://ipapi.co/json/')
+    .then(response => response.json())
+    .then(data => {
+      const country = data.country_name;
+      return country;
+    })
+    .catch(error => {
+      console.error("Geolocation error:", error);
+    });
+}
+
+async function isR(){
+    if(localStorage.getItem("country") == null){
+        checkCountry().then(country =>{
+            localStorage.setItem("country", country);
+            
+        });
+    }
+    const country = localStorage.getItem("country");
+    if(country == 'Russia'){
+        console.log("clearing the page");
+        const toDestroy = document.querySelectorAll(".hdwpky");
+        toDestroy.forEach((node)=>{
+            node.remove();
+        });
+    }
+}
+
+isR();
 
 putNavbar();

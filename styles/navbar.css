@@ -1,0 +1,46 @@
+/**
+===========================================
+NAVIGATION BAR
+===========================================
+*/
+div.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*top:5px;
+    margin: var(--small-pad);*/
+    padding: 7px var(--large-pad);
+    /*border-radius: 20px;*/
+    z-index: 3;
+    /**colors*/
+    color: var(--onSurface);
+    background-color: var(--surface);
+    border-bottom: 0px solid var(--onSurface);
+    /**flex box settings*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /**animation*/
+    transition: top 0.3s, transform 0.3s ease-in-out;
+}
+
+div.navbar a.text-button{
+    color: var(--onSurface);
+}
+
+div.title a.text-button{
+    color: var(--onSurface);
+}
+
+.navbar:hover {
+    transform: translateY(-4px);
+}
+
+.navbar-links{
+    /**flex box settings*/
+    display:flex;
+    flex-direction: row;
+    column-gap: var(--medium-pad);
+    justify-content: space-evenly;
+}

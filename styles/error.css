@@ -1,7 +1,7 @@
 
 body {
-  background-image: url('/pictures/defaults/Crypto\ Coding\ GIF.gif'); /* Replace with your image path */
-  background-repeat: repeat; /* This is the default; you can omit it */
+  background-image: url('../pictures/defaults/glitch.gif');
+  background-repeat: repeat;
 }
 
 .error-message{

@@ -80,48 +80,21 @@ ul{
 
 /*ground color*/
 body{
-    margin-top: 50px;
+    margin-top: 60px;
     color: var(--onSurface);
     background-color: var(--surface);
 }
 
-/**
-===========================================
-NAVIGATION BAR
-===========================================
-*/
-div.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    /*top:5px;
-    margin: var(--small-pad);*/
-    padding: 7px;
-    /*border-radius: 20px;*/
-    z-index: 3;
-    /**colors*/
-    color: var(--onSurface);
-    background-color: var(--surface);
-    border-bottom: 0px solid var(--onSurface);
-    /**flex box settings*/
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /**animation*/
-    transition: top 0.3s, transform 0.3s ease-in-out;
+h1 {
+    font-size: 3rem;
 }
 
-div.navbar a.text-button{
-    color: var(--onSurface);
+h2 {
+    font-size: 2.5rem;
 }
 
-div.title a.text-button{
-    color: var(--onSurface);
-}
-
-.navbar:hover {
-    transform: translateY(-4px);
+h3 {
+    font-size: 2rem;
 }
 
 /**
