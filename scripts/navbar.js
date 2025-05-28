@@ -14,6 +14,8 @@ function putNavbar(){
     let navbarEl = document.querySelector(".navbar");
     if (navbarEl){
         navbarEl.innerHTML = `
+        <h2>TPdkrt</h2>
+        <div class="navbar-links">
         <a href="projects.html" class="text-button">
             <div>projects</div>
         </a>
@@ -26,6 +28,7 @@ function putNavbar(){
         <a href="index.html#main_title" class="text-button">
             <div>about me</div>
         </a>
+        </div>
         `;
     } else {
         console.log("navbar not found on page");

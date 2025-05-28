@@ -10,7 +10,7 @@ div.navbar {
     right: 0;
     /*top:5px;
     margin: var(--small-pad);*/
-    padding: 7px;
+    padding: 7px var(--large-pad);
     /*border-radius: 20px;*/
     z-index: 3;
     /**colors*/
@@ -20,7 +20,7 @@ div.navbar {
     /**flex box settings*/
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /**animation*/
     transition: top 0.3s, transform 0.3s ease-in-out;
 }
@@ -35,4 +35,12 @@ div.title a.text-button{
 
 .navbar:hover {
     transform: translateY(-4px);
+}
+
+.navbar-links{
+    /**flex box settings*/
+    display:flex;
+    flex-direction: row;
+    column-gap: var(--medium-pad);
+    justify-content: space-evenly;
 }
