@@ -3,25 +3,23 @@
 NAVIGATION BAR
 ===========================================
 */
-div.navbar {
+/*div.navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    /*top:5px;
-    margin: var(--small-pad);*/
     padding: 7px var(--large-pad);
-    /*border-radius: 20px;*/
+  
     z-index: 3;
-    /**colors*/
+  
     color: var(--onSurface);
     background-color: var(--surface);
     border-bottom: 0px solid var(--onSurface);
-    /**flex box settings*/
+   
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    /**animation*/
+ 
     transition: top 0.3s, transform 0.3s ease-in-out;
 }
 
@@ -38,9 +36,130 @@ div.title a.text-button{
 }
 
 .navbar-links{
-    /**flex box settings*/
+  
     display:flex;
     flex-direction: row;
     column-gap: var(--medium-pad);
     justify-content: space-evenly;
+}*/
+
+/*
+TUTORIAL
+*/
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--onSurface);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav .home-li{
+    margin-right: auto;
+}
+nav li{
+    display: flex;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+    padding: 1em 2em;
+    color: var(--onSurface);
+    transition: background-color 150ms ease;
+}
+nav a:hover{
+    background-color: var(--surfaceDim);
+}
+nav a.active-link{
+    border-bottom: 2px solid var(--onSurface);
+}
+
+#open-sidebar-button{
+    position: fixed;
+    top:0;
+    right:0;
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    margin-left: auto;
+    cursor: pointer;
+}
+#close-sidebar-button{
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+#overlay{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+}
+.skip-link {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: var(--accent-color); 
+    color: #ffffff; 
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.skip-link:focus {
+    opacity: 1; 
+    pointer-events: auto; 
+    outline: 3px solid #ffffff; 
+}
+@media screen and (max-width: 700px) {
+    #open-sidebar-button, #close-sidebar-button{
+        display: block;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: auto;
+        right: -100%;
+        height: 100vh;
+        width: min(15em, 100%);
+        z-index: 10;
+        border-left: 1px solid var(--onSurface);
+        transition: right 300ms ease-in-out;
+    }
+    nav.show{
+        right: 0;
+    }
+    nav.show ~ #overlay{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    nav a{
+        width: 100%;
+        padding-left: 2.5em;
+    }
+    nav a.active-link{
+        border-bottom: none;
+    }
+    nav .home-li{
+        margin-right: unset;
+    }
 }
