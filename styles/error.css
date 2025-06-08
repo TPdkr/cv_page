@@ -5,6 +5,9 @@ body {
 }
 
 .error-message{
-    padding: var(--large-pad);
-    background-color: var(--shadowColor);
+  position: fixed;
+  inset: 0;
+  padding: var(--large-pad);
+  margin-top: 40px;
+  background-color: var(--shadowColor);
 }
