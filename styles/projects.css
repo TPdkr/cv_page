@@ -12,25 +12,9 @@ GENERAL
 ===========================================
 */
 
-/**the title part*/
-.projectTitle h1{
-    /*font-size: 60px;*/
-    margin-bottom: var(--large-pad);
-}
-
-/**we want to center the items vertically*/
-.projectTitle div.row{
-    align-items: center;
-}
-
 /**blob row of features*/
 div.row.features{
     justify-content: flex-start;
-}
-
-/*mid title section*/
-.projectMidTitle h2{
-    margin: var(--large-pad) 0;
 }
 
 /**
@@ -41,30 +25,33 @@ NEW PROJECTS TITLE CARD
 .project-title{
     position: relative;
     margin: var(--large-pad);
+    min-height: 20rem;
     max-height: 30rem;
     overflow: hidden;
     border-radius: var(--large-radius);
 }
 
 .project-title img{
+    position: absolute;
+    inset: 0;
     width: 102%;
-    align-self: center;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .project-title-text{
+    z-index: 3;
     position: absolute;
     inset: 0;
     border-radius: var(--large-radius);
     padding: var(--large-pad);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.project-title-text h3{
-    text-align: center;
-}
 /*
 ===========================================
 PAGE DESCRIPTION
@@ -155,7 +142,7 @@ SKILL GRID
     text-wrap: wrap;
 }
 
-@media (max-width:64rem) {
+@media (max-width:32rem) {
     .page-desciption-grid div.skill-grid {
         grid-template-columns: 1fr;
     }
@@ -180,13 +167,13 @@ PROJECT LINK CARD
     gap: var(--medium-pad);
 }
 
-@media(max-width: 1000px){
+@media(max-width: 64rem){
     .projects-links-grid{
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 32rem){
     .projects-links-grid{
         grid-template-columns: 1fr;
     }
