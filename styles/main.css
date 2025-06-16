@@ -67,7 +67,8 @@ ROOT
 
 /*set the default state*/
 *{
-    font-family: Helvetica;
+    /*font-family: Helvetica;*/
+    font-family: 'Courier New', monospace;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -80,7 +81,7 @@ ul{
 
 /*ground color*/
 body{
-    margin-top: 60px;
+    margin-top: 6rem;
     color: var(--onSurface);
     background-color: var(--surface);
 }
@@ -97,6 +98,14 @@ h3 {
     font-size: 2rem;
 }
 
+h4 {
+    font-size: 1.7rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
 /**
 ===========================================
 BLOBS
@@ -106,7 +115,7 @@ BLOBS
     display: inline-block;
     padding: 10px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.2rem;
     border-radius: 50vh;
 }
 
@@ -184,11 +193,11 @@ CARD BASE
 }
 
 .card h2{
-    font-size: 40px;
+    /*font-size: 40px;*/
 }
 
 .card h3{
-    font-size: 30px;
+    /*font-size: 30px;*/
     margin: var(--tiny-pad) 0;
 }
 
@@ -245,23 +254,23 @@ TITLE
 }
 
 .title h1{
-    font-size: 70px;
+    /*font-size: 70px;*/
 }
 
 .title h2{
-    font-size: 40px;
+    /*font-size: 40px;*/
     line-height: 30px;
     margin: var(--small-pad) 0;
 }
 
 .title h3{
-    font-size: 25px;
+    /*font-size: 25px;*/
     line-height: 30px;
 }
 
 .title p{
     margin: 10px;
-    font-size: 25px;
+    /*font-size: 25px;*/
 }
 
 /**
@@ -380,4 +389,14 @@ this is a text button like the ones in the navbar
 .onSurface{
     color: var(--surface);
     background-color: var(--onSurface);
+}
+
+.only-desktop{
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .only-desktop{
+        display: block;
+    }
 }

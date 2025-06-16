@@ -14,7 +14,7 @@ GENERAL
 
 /**the title part*/
 .projectTitle h1{
-    font-size: 60px;
+    /*font-size: 60px;*/
     margin-bottom: var(--large-pad);
 }
 
@@ -34,12 +34,12 @@ div.row.features{
 }
 
 .blob, .blob-outlined{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 @media(max-width: 1000px){
     .blob, .blob-outlined{
-        font-size: 1.2rem;
+        /*font-size: 1.2rem;*/
     }
 }
 
@@ -75,7 +75,7 @@ NEW PROJECTS TITLE CARD
 }
 
 .project-title-text h1{
-    font-size: 5rem;
+    /*font-size: 5rem;*/
 }
 
 .project-title-text h3{
@@ -98,14 +98,14 @@ PAGE DESCRIPTION
     gap: var(--large-pad);
 }
 
-@media(max-width: 1200px){
+@media(max-width: 75rem){
     .page-desciption-grid{
         grid-template-columns: 1fr;
     }
 }
 
 .paragraph p{
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
 }
 /*
 -------------------------------------------
@@ -130,12 +130,12 @@ This is the left most card
 }
 
 .blob-row div.blob, .blob-row div.blob-outlined{
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
 }
 
 @media(max-width: 1200px){
     .blob-row div.blob, .blob-row div.blob-outlined{
-        font-size: 2rem;
+        /*font-size: 2rem;*/
     }
 }
 
@@ -185,13 +185,13 @@ SKILL GRID
 
 @media (min-width: 1500px) and (max-width: 1700px) {
     .skill-card h3{
-        font-size: 1.5rem;
+        /*font-size: 1.5rem;*/
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
     .skill-card h3{
-        font-size: 1rem;
+        /*font-size: 1rem;*/
     }
 }
 
@@ -267,7 +267,7 @@ PROJECT LINK CARD
     border-radius: 50%;
     height: 75px;
     width: 75px;
-    font-size: 50px;
+    font-size: 2rem;
 }
 
 .project-card-preview img{

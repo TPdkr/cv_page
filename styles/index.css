@@ -40,7 +40,7 @@ MAIN TITLE
     }
 
     .profile-text h1{
-        font-size: 50px;
+        /*font-size: 50px;*/
     }
 }
 
@@ -83,7 +83,7 @@ REACH OUT MENU
 }
 
 .reachOutCard h1{
-    font-size: 60px;
+    /*font-size: 60px;*/
 }
 
 .reachOutCard p{
@@ -235,11 +235,11 @@ the picture with the text over it
     /*makes sure there is enough space*/
     margin-left: var(--medium-pad);
     margin-right: var(--medium-pad);
-    font-size: 60px;
+    /*font-size: 60px;*/
 }
 
 .imgTitle h3{
-    font-size: 20px;
+    /*font-size: 20px;*/
     /*makes sure it is spaced out*/
     margin-bottom: var(--medium-pad);
     margin-left: var(--medium-pad);
@@ -272,7 +272,7 @@ they share a lot of similarities
 }
 
 .workCard h2, .courseCard h2{
-    font-size: 20px;
+    /*font-size: 20px;*/
 }
 
 .workCard div.blob, .courseCard div.blob{
