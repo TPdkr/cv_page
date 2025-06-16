@@ -12,35 +12,9 @@ GENERAL
 ===========================================
 */
 
-/**the title part*/
-.projectTitle h1{
-    font-size: 60px;
-    margin-bottom: var(--large-pad);
-}
-
-/**we want to center the items vertically*/
-.projectTitle div.row{
-    align-items: center;
-}
-
 /**blob row of features*/
 div.row.features{
     justify-content: flex-start;
-}
-
-/*mid title section*/
-.projectMidTitle h2{
-    margin: var(--large-pad) 0;
-}
-
-.blob, .blob-outlined{
-    font-size: 1rem;
-}
-
-@media(max-width: 1000px){
-    .blob, .blob-outlined{
-        font-size: 1.2rem;
-    }
 }
 
 /**
@@ -51,36 +25,33 @@ NEW PROJECTS TITLE CARD
 .project-title{
     position: relative;
     margin: var(--large-pad);
+    min-height: 20rem;
     max-height: 30rem;
     overflow: hidden;
     border-radius: var(--large-radius);
-    /*box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);*/
 }
 
 .project-title img{
+    position: absolute;
+    inset: 0;
     width: 102%;
-    align-self: center;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .project-title-text{
+    z-index: 3;
     position: absolute;
     inset: 0;
-    /*background: rgba(0, 0, 0, 0.6);*/
     border-radius: var(--large-radius);
     padding: var(--large-pad);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.project-title-text h1{
-    font-size: 5rem;
-}
-
-.project-title-text h3{
-    text-align: center;
-}
 /*
 ===========================================
 PAGE DESCRIPTION
@@ -98,14 +69,10 @@ PAGE DESCRIPTION
     gap: var(--large-pad);
 }
 
-@media(max-width: 1200px){
+@media(max-width: 64rem){
     .page-desciption-grid{
         grid-template-columns: 1fr;
     }
-}
-
-.paragraph p{
-    font-size: 1.2rem;
 }
 /*
 -------------------------------------------
@@ -128,17 +95,9 @@ This is the left most card
     flex-direction: row;
     gap: var(--small-pad);    
 }
-
-.blob-row div.blob, .blob-row div.blob-outlined{
-    font-size: 1.5rem;
+.blob-row .blob, .blob-row .blob-outlined{
+    font-size: 1.7rem;
 }
-
-@media(max-width: 1200px){
-    .blob-row div.blob, .blob-row div.blob-outlined{
-        font-size: 2rem;
-    }
-}
-
 .blob-row div.blob-outlined{
     border-width: 0px;
 }
@@ -183,15 +142,9 @@ SKILL GRID
     text-wrap: wrap;
 }
 
-@media (min-width: 1500px) and (max-width: 1700px) {
-    .skill-card h3{
-        font-size: 1.5rem;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1500px) {
-    .skill-card h3{
-        font-size: 1rem;
+@media (max-width:32rem) {
+    .page-desciption-grid div.skill-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -214,13 +167,13 @@ PROJECT LINK CARD
     gap: var(--medium-pad);
 }
 
-@media(max-width: 1000px){
+@media(max-width: 64rem){
     .projects-links-grid{
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 32rem){
     .projects-links-grid{
         grid-template-columns: 1fr;
     }
@@ -267,7 +220,7 @@ PROJECT LINK CARD
     border-radius: 50%;
     height: 75px;
     width: 75px;
-    font-size: 50px;
+    font-size: 2rem;
 }
 
 .project-card-preview img{

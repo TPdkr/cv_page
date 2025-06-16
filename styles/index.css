@@ -25,22 +25,18 @@ MAIN TITLE
     width: 100%;
 }
 
-@media(max-width: 700px){
+@media(max-width: 64rem){
     .profile_title{
         grid-template-columns: 1fr;
     }
 
     .profile_title  img{
-        width: 50%;
+        width: clamp(50%, 32rem, 100%);
     }
 
     .profile-pic{
         display: flex;
         justify-content: center;
-    }
-
-    .profile-text h1{
-        font-size: 50px;
     }
 }
 
@@ -82,10 +78,6 @@ REACH OUT MENU
     color: var(--tertiaryContainer);
 }
 
-.reachOutCard h1{
-    font-size: 60px;
-}
-
 .reachOutCard p{
     margin-top: auto;
     /*border setting*/
@@ -96,7 +88,7 @@ REACH OUT MENU
     border-style: solid;
 }
 
-@media(max-width: 500px){
+@media(max-width: 64rem){
     #reachOutMenu{
         grid-template-columns: 1fr 1fr;
 
@@ -149,8 +141,12 @@ ABOUT ME HEADER CARD
     row-gap: var(--medium-pad);
 }
 
-@media(max-width: 700px){
+@media(max-width: 64rem){
     .aboutHeader{
+        grid-template-columns: 1fr;
+    }
+
+    .languages{
         grid-template-columns: 1fr;
     }
 }
@@ -235,11 +231,9 @@ the picture with the text over it
     /*makes sure there is enough space*/
     margin-left: var(--medium-pad);
     margin-right: var(--medium-pad);
-    font-size: 60px;
 }
 
 .imgTitle h3{
-    font-size: 20px;
     /*makes sure it is spaced out*/
     margin-bottom: var(--medium-pad);
     margin-left: var(--medium-pad);
@@ -269,10 +263,6 @@ they share a lot of similarities
 
 .courseCard div, .workCard div{
     margin-top: auto;
-}
-
-.workCard h2, .courseCard h2{
-    font-size: 20px;
 }
 
 .workCard div.blob, .courseCard div.blob{
@@ -319,11 +309,6 @@ COURSE CARD
 WORK CARD SECTION
 ...........................................
 */
-
-/*header should not stick to row*/
-.workExperience h3{
-    margin-bottom: var(--large-pad);
-}
 
 /*cards need to be at the start*/
 .workExperience div.row{
