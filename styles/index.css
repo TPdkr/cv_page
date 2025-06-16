@@ -147,8 +147,7 @@ ABOUT ME HEADER CARD
     }
 
     .languages{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -310,11 +309,6 @@ COURSE CARD
 WORK CARD SECTION
 ...........................................
 */
-
-/*header should not stick to row*/
-.workExperience h3{
-    margin-bottom: var(--large-pad);
-}
 
 /*cards need to be at the start*/
 .workExperience div.row{
