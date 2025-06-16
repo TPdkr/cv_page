@@ -98,7 +98,7 @@ h3 {
     font-size: 2rem;
 }
 
-h4 {
+h4, button {
     font-size: 1.7rem;
 }
 
@@ -192,12 +192,7 @@ CARD BASE
     border-color: var(--tertiaryContainer);
 }
 
-.card h2{
-    /*font-size: 40px;*/
-}
-
 .card h3{
-    /*font-size: 30px;*/
     margin: var(--tiny-pad) 0;
 }
 
@@ -253,24 +248,17 @@ TITLE
     text-align: center;
 }
 
-.title h1{
-    /*font-size: 70px;*/
-}
-
 .title h2{
-    /*font-size: 40px;*/
     line-height: 30px;
     margin: var(--small-pad) 0;
 }
 
 .title h3{
-    /*font-size: 25px;*/
     line-height: 30px;
 }
 
 .title p{
     margin: 10px;
-    /*font-size: 25px;*/
 }
 
 /**
