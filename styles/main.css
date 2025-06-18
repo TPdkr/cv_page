@@ -68,7 +68,7 @@ ROOT
 /*set the default state*/
 *{
     /*font-family: Helvetica;*/
-    font-family: 'Courier New', monospace;
+    font-family: "IBM Plex Mono", monospace;
     text-decoration: none;
     margin: 0;
     padding: 0;
