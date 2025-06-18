@@ -8,6 +8,6 @@ body {
   position: fixed;
   inset: 0;
   padding: var(--large-pad);
-  padding-top: 50px;
+  padding-top: 5rem;
   background-color: var(--shadowColor);
 }
