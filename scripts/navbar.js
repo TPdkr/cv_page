@@ -23,10 +23,10 @@
     }
 }*/
 
-function putNavbar(){
-    let navbarEl = document.querySelector(".navbar");
-    if (navbarEl){
-        navbarEl.innerHTML = `
+function putNavbar() {
+  let navbarEl = document.querySelector(".navbar");
+  if (navbarEl) {
+    navbarEl.innerHTML = `
         <button id="open-sidebar-button" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
         <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
         </button>
@@ -47,91 +47,91 @@ function putNavbar(){
 
         <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
         `;
-    } else {
-        console.log("navbar not found on page");
-    }
+  } else {
+    console.log("navbar not found on page");
+  }
 }
 
-async function checkCountry(){
-    return fetch('https://ipapi.co/json/')
-    .then(response => response.json())
-    .then(data => {
+async function checkCountry() {
+  return fetch("https://ipapi.co/json/")
+    .then((response) => response.json())
+    .then((data) => {
       const country = data.country_name;
       return country;
     })
-    .catch(error => {
+    .catch((error) => {
       console.error("Geolocation error:", error);
     });
 }
 
-async function isR(){
-    if(localStorage.getItem("country") == null){
-        checkCountry().then(country =>{
-            localStorage.setItem("country", country);
-            
-        });
-    }
-    const country = localStorage.getItem("country");
-    if(country == 'Russia'){
-        console.log("clearing the page");
-        const toDestroy = document.querySelectorAll(".hdwpky");
-        toDestroy.forEach((node)=>{
-            node.remove();
-        });
-    }
+async function isR() {
+  if (localStorage.getItem("country") == null) {
+    checkCountry().then((country) => {
+      localStorage.setItem("country", country);
+    });
+  }
+  const country = localStorage.getItem("country");
+  if (country == "Russia") {
+    console.log("clearing the page");
+    const toDestroy = document.querySelectorAll(".hdwpky");
+    toDestroy.forEach((node) => {
+      node.remove();
+    });
+  }
 }
 
-function updateNavbar(e){
-    const isMobile = e.matches
-    console.log(isMobile)
-    if(isMobile){
-      navbar.setAttribute('inert', '')
-    }
-    else{
-      // desktop device
-      navbar.removeAttribute('inert')
-    }
+function updateNavbar(e) {
+  const isMobile = e.matches;
+  console.log(isMobile);
+  if (isMobile) {
+    navbar.setAttribute("inert", "");
+  } else {
+    // desktop device
+    navbar.removeAttribute("inert");
   }
-  
-function openSidebar(){
-    console.log("opening sidebar");
-    navbar.classList.add('show')
-    openButton.setAttribute('aria-expanded', 'true')
-    navbar.removeAttribute('inert')
 }
-  
-function closeSidebar(){
-    console.log("closing sidebar");
-    navbar.classList.remove('show')
-    openButton.setAttribute('aria-expanded', 'false')
-    navbar.setAttribute('inert', '')
+
+function openSidebar() {
+  console.log("opening sidebar");
+  navbar.classList.add("show");
+  openButton.setAttribute("aria-expanded", "true");
+  navbar.removeAttribute("inert");
 }
-  
+
+function closeSidebar() {
+  console.log("closing sidebar");
+  navbar.classList.remove("show");
+  openButton.setAttribute("aria-expanded", "false");
+  navbar.setAttribute("inert", "");
+}
 
 isR();
 
 putNavbar();
 
-const openButton = document.getElementById('open-sidebar-button');
-const navbar = document.getElementById('navbar');
-const closeButton = document.getElementById('close-sidebar-button');
+const openButton = document.getElementById("open-sidebar-button");
+const navbar = document.getElementById("navbar");
+const closeButton = document.getElementById("close-sidebar-button");
 
 //We check the presence of elements
-if(!openButton){
-    console.log("No open button found");
+if (!openButton) {
+  console.log("No open button found");
 }
-if(!navbar){
-    console.log("No navbar found");
+if (!navbar) {
+  console.log("No navbar found");
 }
-if(!closeButton){
-    console.log('No close navbar button found');
+if (!closeButton) {
+  console.log("No close navbar button found");
 }
 
 const media = window.matchMedia("(width < 64rem)");
 
-media.addEventListener('change', (e) => updateNavbar(e));
-closeButton.addEventListener('click',()=>{closeSidebar();});
-openButton.addEventListener('click',()=>{openSidebar();});
-
+media.addEventListener("change", (e) => updateNavbar(e));
+closeButton.addEventListener("click", () => {
+  closeSidebar();
+});
+openButton.addEventListener("click", () => {
+  openSidebar();
+});
 
 updateNavbar(media);
